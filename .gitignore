@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/
+*.log
+.env
+.env.*
+!.env.example
+
+# Cloudflare / wrangler
+.wrangler/
+.dev.vars
+
+# Local Claude Code config
+.claude/

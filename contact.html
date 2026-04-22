@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Keystone Technologies — Talk to a Real IT Expert</title>
+  <meta name="description" content="Contact Keystone Technologies for managed IT, cybersecurity, cloud or VoIP services in Southwestern Ontario. Call, email or send a message — we respond fast." />
+  <meta name="theme-color" content="#004876" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/keystone.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-left">
+        <a href="tel:+15195551234"><span aria-hidden="true">&#9742;</span> (519) 555-1234</a>
+        <a href="mailto:hello@keystonetech.ca"><span aria-hidden="true">&#9993;</span> hello@keystonetech.ca</a>
+      </div>
+      <div class="utility-right">
+        <a class="btn-utility employee" href="/employee-login.html">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-3 3-2-2"/></svg>
+          Employee Login
+        </a>
+        <a class="btn-utility client" href="/client-login.html">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          Client Login
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bar">
+    <div class="container">
+      <a href="/" class="brand"><img src="/assets/images/keystone.svg" alt="Keystone Technologies" /></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/about.html#careers">Careers</a></li>
+          <li><a href="/contact.html" class="nav-cta">Get Support</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; Contact</div>
+    <h1>Let's talk about your IT.</h1>
+    <p>A real conversation with a senior engineer — no sales script, no pressure. Most messages are answered the same business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <div class="contact-card">
+          <h2 style="margin-bottom:8px;">Send us a message</h2>
+          <p style="margin-bottom:24px;">Tell us a bit about your business and what you'd like to improve.</p>
+          <form name="contact" method="POST" data-netlify="true" action="/thanks.html">
+            <input type="hidden" name="form-name" value="contact" />
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div class="field full">
+                <label for="topic">What can we help with?</label>
+                <select id="topic" name="topic">
+                  <option>General inquiry</option>
+                  <option>Managed IT support</option>
+                  <option>Cybersecurity</option>
+                  <option>Cloud / Microsoft 365</option>
+                  <option>Telephony / VoIP</option>
+                  <option>Compliance &amp; audit</option>
+                  <option>IT assessment</option>
+                  <option>Careers</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your environment, team size, and what you're hoping to improve."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send message</button>
+            <p style="font-size:0.82rem; color: var(--slate); margin-top:14px; margin-bottom:0;">We respect your privacy. Your information is used only to respond to your inquiry.</p>
+          </form>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="info-card">
+          <h3>Reach us directly</h3>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong>Phone</strong><a href="tel:+15195551234">(519) 555-1234</a></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div><strong>Email</strong><a href="mailto:hello@keystonetech.ca">hello@keystonetech.ca</a></div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>Service area</strong>Southwestern Ontario, Canada</div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div><strong>Hours</strong>Mon–Fri 8am–6pm ET<br /><span style="font-size:0.85rem; color:rgba(255,255,255,0.7);">24/7 emergency response for clients</span></div>
+          </div>
+
+          <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12);">
+            <strong style="display:block; color:#fff; margin-bottom:10px;">Existing client?</strong>
+            <a href="/client-login.html" class="btn" style="background: var(--gold); color: var(--ink); width:100%;">Open the Client Portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/images/keystone.svg" alt="Keystone Technologies" />
+        <p>Reliable, expert IT services for SMBs across Southwestern Ontario.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services.html#managed">Managed IT</a></li>
+          <li><a href="/services.html#security">Cybersecurity</a></li>
+          <li><a href="/services.html#cloud">Cloud Solutions</a></li>
+          <li><a href="/services.html#voip">Telephony &amp; VoIP</a></li>
+          <li><a href="/services.html#compliance">Compliance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/about.html#careers">Careers</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/client-login.html">Client Portal</a></li>
+          <li><a href="/employee-login.html">Employee Portal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in touch</h5>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+15195551234">(519) 555-1234</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:hello@keystonetech.ca">hello@keystonetech.ca</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Southwestern Ontario, Canada</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Keystone Technologies. All rights reserved.</span>
+      <span><a href="#">Privacy</a> &middot; <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
