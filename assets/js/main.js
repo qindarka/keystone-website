@@ -32,6 +32,20 @@ document.querySelectorAll('[data-year]').forEach(el => {
   el.textContent = new Date().getFullYear();
 });
 
+// Pre-select contact form topic from ?topic= query parameter
+const topicParam = new URLSearchParams(location.search).get('topic');
+if (topicParam) {
+  const topicSelect = document.getElementById('topic');
+  if (topicSelect) {
+    const wanted = topicParam.toLowerCase();
+    Array.from(topicSelect.options).forEach(opt => {
+      if (opt.value.toLowerCase() === wanted || opt.text.toLowerCase() === wanted) {
+        topicSelect.value = opt.value;
+      }
+    });
+  }
+}
+
 // Highlight active nav link by current path
 const path = location.pathname.replace(/\/$/, '') || '/';
 document.querySelectorAll('.nav-links a').forEach(a => {

@@ -2,6 +2,8 @@
 /services      /services.html       301
 /about         /about.html          301
 /contact       /contact.html        301
-/careers       /about.html#careers  301
+/careers       /careers.html        301
+/privacy       /privacy.html        301
+/terms         /terms.html          301
 /client        /client-login.html   301
 /employee      /employee-login.html 301
