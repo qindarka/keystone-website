@@ -760,13 +760,46 @@ p { margin: 0 0 1em; color: var(--slate); }
   }
   .nav-links.open { transform: translateY(0); opacity: 1; visibility: visible; }
   .nav-links a { padding: 12px 14px; }
-  .utility-bar .container { flex-direction: column; padding-top: 8px; padding-bottom: 8px; gap: 8px; }
-  .utility-left { font-size: 0.78rem; gap: 12px; }
+  /* Compact utility bar on mobile — single row, hide email + hours, shrink buttons */
+  .utility-bar .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    gap: 10px;
+    min-height: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .utility-left {
+    font-size: 0.78rem;
+    gap: 12px;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .utility-left a[href^="mailto:"] { display: none; }
+  .utility-left .hidden-sm { display: none; }
+  .utility-right { gap: 6px; flex-shrink: 0; }
+  .btn-utility { padding: 6px 10px; font-size: 0.72rem; }
+  .btn-utility svg { width: 12px; height: 12px; }
   .hero-stats { grid-template-columns: 1fr; gap: 18px; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; }
   .section { padding: 56px 0; }
   .container { padding: 0 18px; }
+}
+
+/* Very small phones — collapse login-button text to icon-only to keep
+   the phone number + both buttons on a single row. Text stays in the
+   DOM for screen readers (font-size: 0 visually collapses it). */
+@media (max-width: 420px) {
+  .utility-left { font-size: 0.72rem; gap: 8px; }
+  .btn-utility {
+    padding: 7px 9px;
+    font-size: 0;
+    gap: 0;
+  }
+  .btn-utility svg { width: 15px; height: 15px; }
 }
 
 /* ============ ANIMATIONS ============ */
