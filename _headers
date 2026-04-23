@@ -6,7 +6,15 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-XSS-Protection: 1; mode=block
 
-/assets/*
+# CSS and JS — short cache so style/script updates ship within an hour.
+# (We don't have build-time hashing, so can't safely use immutable.)
+/assets/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Images can stay long-cached
+/assets/images/*
   Cache-Control: public, max-age=31536000, immutable
 
 /*.html

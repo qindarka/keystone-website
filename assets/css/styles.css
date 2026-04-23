@@ -214,10 +214,8 @@ p { margin: 0 0 1em; color: var(--slate); }
 .hero p { color: rgba(255, 255, 255, 0.85); font-size: 1.13rem; max-width: 560px; }
 
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
+  display: inline-block;
+  padding: 6px 14px 6px 18px;
   border-radius: 999px;
   background: rgba(255, 184, 25, 0.15);
   border: 1px solid rgba(255, 184, 25, 0.35);
@@ -227,8 +225,20 @@ p { margin: 0 0 1em; color: var(--slate); }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 22px;
+  white-space: nowrap;
 }
-.eyebrow .dot { width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(255, 184, 25, 0.25); }
+.eyebrow .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px rgba(255, 184, 25, 0.25);
+  margin-right: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
 
