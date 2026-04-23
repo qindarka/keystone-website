@@ -8,12 +8,16 @@ Static marketing site for [keystonetech.ca](https://keystonetech.ca/), built as 
 .
 ├── index.html              # Home
 ├── services.html           # Services overview
-├── about.html              # About + careers (#careers anchor)
+├── about.html              # About
+├── careers.html            # Careers + open positions
 ├── contact.html            # Contact form
-├── client-login.html       # Client portal sign-in
-├── employee-login.html     # Internal staff sign-in
+├── privacy.html            # Privacy policy
+├── terms.html              # Terms of use
 ├── thanks.html             # Form success page
 ├── 404.html                # Not found
+#   Client + employee portals are external services, wired via _redirects:
+#     /client, /client-login   → https://keystonetech.myportallogin.com/
+#     /employee, /employee-login → https://keystonetech.sharepoint.com/sites/TechsRUs
 ├── assets/
 │   ├── css/styles.css
 │   ├── js/main.js

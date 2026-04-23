@@ -1,8 +1,5 @@
-# Pretty URLs that don't share a name with an .html file get
-# explicit redirects. The .html-named pages (/services, /about,
-# /careers, /contact, /privacy, /terms) are handled automatically
-# by Workers Static Assets via html_handling — adding _redirects
-# rules for them creates a loop with the .html→pretty redirect.
-
-/client        /client-login      301
-/employee      /employee-login    301
+# Client + employee portals are external services
+/client          https://keystonetech.myportallogin.com/    301
+/client-login    https://keystonetech.myportallogin.com/    301
+/employee        https://keystonetech.sharepoint.com/sites/TechsRUs    301
+/employee-login  https://keystonetech.sharepoint.com/sites/TechsRUs    301
