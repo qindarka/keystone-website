@@ -756,6 +756,90 @@ p { margin: 0 0 1em; color: var(--slate); }
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+/* ============ ACCESSIBILITY ============ */
+/* Skip-to-main link — invisible until focused */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  z-index: 1000;
+  background: var(--navy);
+  color: var(--white);
+  padding: 12px 18px;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: top 0.2s var(--ease);
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0;
+  color: var(--white);
+  outline: 3px solid var(--gold);
+  outline-offset: -3px;
+}
+
+/* Visible keyboard focus on every interactive element */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Lighter focus ring on dark backgrounds */
+.hero a:focus-visible,
+.section-dark a:focus-visible,
+.cta-strip a:focus-visible,
+.feature-visual a:focus-visible,
+.info-card a:focus-visible,
+.site-footer a:focus-visible,
+.utility-bar a:focus-visible,
+.btn-utility:focus-visible,
+.page-header a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Buttons: keep their visual identity but make focus obvious */
+.btn:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+.btn-primary:focus-visible { outline-color: var(--navy); }
+
+/* Visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Honour OS-level "reduce motion" preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .pulse { animation: none !important; }
+}
+
 /* ============ KNOWLEDGE / ARTICLES ============ */
 .kn-grid {
   display: grid;
