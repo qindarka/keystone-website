@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intel’s Spectre &#038; Meltdown Story Continues — Keystone Technologies</title>
+  <meta name="description" content="Spectre and Meltdown are being called &#8220;inherent design flaws&#8221; by some, although this is not politically correct. These exploits take advantage of cr" />
+  <meta name="theme-color" content="#004876" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/keystone.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=4" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-left">
+        <a href="tel:+15194511793"><span aria-hidden="true">&#9742;</span> (519) 451-1793</a>
+        <a href="mailto:info@keystonetech.ca"><span aria-hidden="true">&#9993;</span> info@keystonetech.ca</a>
+      </div>
+      <div class="utility-right">
+        <a class="btn-utility employee" href="https://keystonetech.sharepoint.com/sites/TechsRUs" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-3 3-2-2"/></svg>
+          Employee Login
+        </a>
+        <a class="btn-utility client" href="https://keystonetech.myportallogin.com/" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          Client Login
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bar">
+    <div class="container">
+      <a href="/" class="brand"><img src="/assets/images/keystone.svg" alt="Keystone Technologies" /></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/knowledge">Knowledge</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/contact" class="nav-cta">Get Support</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/knowledge">Knowledge</a> &rsaquo; Intel’s Spectre &#038; Meltdown Story Continues</div>
+    <h1 style="max-width: 880px; margin-left:auto; margin-right:auto;">Intel’s Spectre &#038; Meltdown Story Continues</h1>
+    <p style="opacity:0.85;">January 29, 2018 &middot; keystone</p>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <article class="kn-article reveal">
+      <div style="margin-top:32px; max-width: 880px; border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow-md);"><img src="/assets/images/knowledge/intels-spectre-meltdown-story-continues.jpg" alt="Intel’s Spectre &#038; Meltdown Story Continues" style="width:100%; height:auto; display:block;" /></div>
+      <div class="kn-prose">
+<p>Spectre and Meltdown are being called &#8220;inherent design flaws&#8221; by some, although this is not politically correct. These exploits take advantage of critical vulnerabilities in modern processors. While the image we have used for this article says &#8220;virus,&#8221; these two exploits are not viruses. There is certainly a difference between a virus and an exploit, and the way that Spectre or Meltdown access information is recognized as an exploit.
+</p>
+<p>
+It’s important to understand that it’s not just Intel processors that are experiencing this problem – AMD processors are experiencing it too, as are ARM. Any CPU in the last 20 years is vulnerable, and there’s no way to tell if you’ve been hit with it as there is no log files generated.
+</p>
+<p>
+The challenge lies in the way that these two exploits work. Typically, a system protects data that should not be transmitted or shared from one application to another. This is called &#8220;protected data.&#8221; How the exploits work is, they take advantage of caching on your system. Caching is where the system uses predictive analysis to determine what may come next, so that it can get those instruction sets ready ahead of time. This speeds up the processing time on your system.
+</p>
+<p>
+Meltdown and Spectre take advantage of caching and predictive analysis. The premise is to gleam data from the caching process and then export that data. Typically, this data would be protected under &#8220;protected memory,&#8221; but hackers have found a way to access that cached memory. In this way, they can obtain data from the computer that normally should be encrypted or protected.
+</p>
+<h3>Intel Downplays the Impact of Spectre &amp; Meltdown Exploits</h3>
+<p>Initially, Intel said that only older systems could or would be affected by these identified vulnerabilities. However, Intel has now recently confessed that any systems manufactured in the last 20 years could be vulnerable.
+</p>
+<p>
+A patch was recently released to combat the Spectre exploit, but this patch has caused systems to get stuck in a &#8220;reboot loop,&#8221; rebooting endlessly. Microsoft has now &#8220;disabled&#8221; the fix – they have released a patch for Windows 7, 8.1 and Windows 10 which disables the fix for Spectre variant 2. Microsoft is stating that the new patch should stop computers from rebooting and not being able to load the OS.
+</p>
+<p>
+Intel has taken heat over these exploits, not because they are being blamed as &#8220;building chips with design flaws&#8221; but because of the way they have handled the problem from the beginning. The finger is also being pointed at Intel for alerting companies in China such as Lenovo and Alibaba, before notifying the government in the U.S.</p>
+<p>
+Many also believe Intel has downplayed this problem from the beginning, and should had been more honest with their customer base about how wide spread this exploit is at this time.</p>
+<p>The post <a rel="nofollow" href="https://keystonetech.ca/2018/01/29/intels-spectre-meltdown-story-continues/">Intel’s Spectre &#038; Meltdown Story Continues</a> appeared first on <a rel="nofollow" href="https://keystonetech.ca">Keystone Technologies</a>.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section section-mist">
+  <div class="container">
+    <div class="kn-pager">
+      <a href="/knowledge/fingerprint-scanning" class="kn-nav-link">&larr; Fingerprint Scanning becoming a more Mainstream Technology</a>
+      <a href="/knowledge/cybersecurity-policies-multi-generational-workplace" class="kn-nav-link kn-nav-next">Cybersecurity Policies For A Multi-Generational Workplace &rarr;</a>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="/knowledge" class="btn btn-outline">All articles</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-strip reveal">
+      <div>
+        <h2>Need help with what you just read about?</h2>
+        <p>Talk to a senior engineer — no sales script.</p>
+      </div>
+      <div class="cta-strip-actions">
+        <a href="/contact" class="btn btn-primary">Get in touch</a>
+        <a href="/services" class="btn btn-secondary">See our services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/images/keystone.svg" alt="Keystone Technologies" />
+        <p>Reliable, expert IT services for SMBs across Southwestern Ontario. Based in London, ON.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/managed">Managed IT</a></li>
+          <li><a href="/services/cybersecurity">Cybersecurity</a></li>
+          <li><a href="/services/cloud">Cloud Solutions</a></li>
+          <li><a href="/services/voip">Telephony &amp; VoIP</a></li>
+          <li><a href="/services/compliance">Compliance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/knowledge">Knowledge</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="https://keystonetech.myportallogin.com/" target="_blank" rel="noopener noreferrer">Client Portal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in touch</h5>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+15194511793">(519) 451-1793</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@keystonetech.ca">info@keystonetech.ca</a></div>
+        <div class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>300 Wellington St, Suite 200<br />London, ON N6B 2L5</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Keystone Technologies. All rights reserved.</span>
+      <span><a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

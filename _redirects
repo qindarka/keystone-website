@@ -3,3 +3,8 @@
 /client-login    https://keystonetech.myportallogin.com/    301
 /employee        https://keystonetech.sharepoint.com/sites/TechsRUs    301
 /employee-login  https://keystonetech.sharepoint.com/sites/TechsRUs    301
+
+# Old WordPress /news/ paths → new /knowledge
+/news            /knowledge        301
+/news/*          /knowledge/:splat 301
+/news/feed/*     /knowledge        301
