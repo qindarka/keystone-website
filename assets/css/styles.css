@@ -228,7 +228,7 @@ p { margin: 0 0 1em; color: var(--slate); }
   text-transform: uppercase;
   margin-bottom: 22px;
 }
-.eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(255, 184, 25, 0.25); }
+.eyebrow .dot { width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(255, 184, 25, 0.25); }
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
 
