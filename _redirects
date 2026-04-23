@@ -1,10 +1,166 @@
-# Client + employee portals are external services
-/client          https://keystonetech.myportallogin.com/    301
-/client-login    https://keystonetech.myportallogin.com/    301
-/employee        https://keystonetech.sharepoint.com/sites/TechsRUs    301
-/employee-login  https://keystonetech.sharepoint.com/sites/TechsRUs    301
+# ============================================================
+# External portals
+# ============================================================
+/client          https://keystonetech.myportallogin.com/                301
+/client-login    https://keystonetech.myportallogin.com/                301
+/employee        https://keystonetech.sharepoint.com/sites/TechsRUs     301
+/employee-login  https://keystonetech.sharepoint.com/sites/TechsRUs     301
 
-# Old WordPress /news/ paths → new /knowledge
-/news            /knowledge        301
-/news/*          /knowledge/:splat 301
-/news/feed/*     /knowledge        301
+# ============================================================
+# Old WordPress blog/news — legacy /news/ paths
+# ============================================================
+/news                 /knowledge               301
+/news/                /knowledge               301
+/news/feed            /knowledge               301
+/news/feed/           /knowledge               301
+/news/*               /knowledge/:splat        301
+
+# ============================================================
+# Old WordPress article permalinks: /YYYY/MM/DD/slug/ → /knowledge/slug
+# All 50 legacy article URLs from the WordPress site
+# ============================================================
+/2026/04/10/why-ontario-smbs-targets-for-ransomware                      /knowledge/why-ontario-smbs-targets-for-ransomware                      301
+/2026/04/10/why-ontario-smbs-targets-for-ransomware/                     /knowledge/why-ontario-smbs-targets-for-ransomware                      301
+/2025/08/19/antivirus-edr-mdr                                            /knowledge/antivirus-edr-mdr                                            301
+/2025/08/19/antivirus-edr-mdr/                                           /knowledge/antivirus-edr-mdr                                            301
+/2025/07/09/windows-10-end-of-life-what-you-need-to-know                 /knowledge/windows-10-end-of-life-what-you-need-to-know                 301
+/2025/07/09/windows-10-end-of-life-what-you-need-to-know/                /knowledge/windows-10-end-of-life-what-you-need-to-know                 301
+/2021/12/09/protecting-your-business-with-a-firewall                     /knowledge/protecting-your-business-with-a-firewall                     301
+/2021/12/09/protecting-your-business-with-a-firewall/                    /knowledge/protecting-your-business-with-a-firewall                     301
+/2021/11/30/its-time-to-upgrade-to-microsoft-365-and-teams               /knowledge/its-time-to-upgrade-to-microsoft-365-and-teams               301
+/2021/11/30/its-time-to-upgrade-to-microsoft-365-and-teams/              /knowledge/its-time-to-upgrade-to-microsoft-365-and-teams               301
+/2021/11/22/lazy-i-t-not-crypto-the-reason-for-increased-ransomware-attacks   /knowledge/lazy-i-t-not-crypto-the-reason-for-increased-ransomware-attacks  301
+/2021/11/22/lazy-i-t-not-crypto-the-reason-for-increased-ransomware-attacks/  /knowledge/lazy-i-t-not-crypto-the-reason-for-increased-ransomware-attacks  301
+/2021/07/08/driving-stronger-results-with-information-technology         /knowledge/driving-stronger-results-with-information-technology         301
+/2021/07/08/driving-stronger-results-with-information-technology/        /knowledge/driving-stronger-results-with-information-technology         301
+/2021/06/01/preparing-your-business-for-whats-coming-next                /knowledge/preparing-your-business-for-whats-coming-next                301
+/2021/06/01/preparing-your-business-for-whats-coming-next/               /knowledge/preparing-your-business-for-whats-coming-next                301
+/2021/04/16/laptops-built-to-do-business                                 /knowledge/laptops-built-to-do-business                                 301
+/2021/04/16/laptops-built-to-do-business/                                /knowledge/laptops-built-to-do-business                                 301
+/2021/03/11/a-i-is-here-to-protect-us-from-ourselves                     /knowledge/a-i-is-here-to-protect-us-from-ourselves                     301
+/2021/03/11/a-i-is-here-to-protect-us-from-ourselves/                    /knowledge/a-i-is-here-to-protect-us-from-ourselves                     301
+/2021/02/11/securing-small-business-with-virtual-private-networks        /knowledge/securing-small-business-with-virtual-private-networks        301
+/2021/02/11/securing-small-business-with-virtual-private-networks/       /knowledge/securing-small-business-with-virtual-private-networks        301
+/2021/02/11/scaling-happiness                                            /knowledge/scaling-happiness                                            301
+/2021/02/11/scaling-happiness/                                           /knowledge/scaling-happiness                                            301
+/2019/12/14/the-king-is-dead-long-live-the-king                          /knowledge/the-king-is-dead-long-live-the-king                          301
+/2019/12/14/the-king-is-dead-long-live-the-king/                         /knowledge/the-king-is-dead-long-live-the-king                          301
+/2019/12/08/inspiring-teens-to-get-into-tech                             /knowledge/inspiring-teens-to-get-into-tech                             301
+/2019/12/08/inspiring-teens-to-get-into-tech/                            /knowledge/inspiring-teens-to-get-into-tech                             301
+/2019/11/26/what-is-cloud-security                                       /knowledge/what-is-cloud-security                                       301
+/2019/11/26/what-is-cloud-security/                                      /knowledge/what-is-cloud-security                                       301
+/2018/11/25/malware-virus                                                /knowledge/malware-virus                                                301
+/2018/11/25/malware-virus/                                               /knowledge/malware-virus                                                301
+/2018/11/06/8-tech-terms-every-business-owner-should-know                /knowledge/8-tech-terms-every-business-owner-should-know                301
+/2018/11/06/8-tech-terms-every-business-owner-should-know/               /knowledge/8-tech-terms-every-business-owner-should-know                301
+/2018/09/16/should-i-outsource-my-it-services-the-pros-and-cons          /knowledge/should-i-outsource-my-it-services-the-pros-and-cons          301
+/2018/09/16/should-i-outsource-my-it-services-the-pros-and-cons/         /knowledge/should-i-outsource-my-it-services-the-pros-and-cons          301
+/2018/08/13/should-you-block-social-media-websites                       /knowledge/should-you-block-social-media-websites                       301
+/2018/08/13/should-you-block-social-media-websites/                      /knowledge/should-you-block-social-media-websites                       301
+/2018/07/09/how-hackers-use-your-data                                    /knowledge/how-hackers-use-your-data                                    301
+/2018/07/09/how-hackers-use-your-data/                                   /knowledge/how-hackers-use-your-data                                    301
+/2018/06/26/summer-holidays-cybersecurity                                /knowledge/summer-holidays-cybersecurity                                301
+/2018/06/26/summer-holidays-cybersecurity/                               /knowledge/summer-holidays-cybersecurity                                301
+/2018/05/29/best-mobile-apps-to-help-grow-your-small-business            /knowledge/best-mobile-apps-to-help-grow-your-small-business            301
+/2018/05/29/best-mobile-apps-to-help-grow-your-small-business/           /knowledge/best-mobile-apps-to-help-grow-your-small-business            301
+/2018/05/11/5-benefits-of-wireless-internet-in-the-workplace             /knowledge/5-benefits-of-wireless-internet-in-the-workplace             301
+/2018/05/11/5-benefits-of-wireless-internet-in-the-workplace/            /knowledge/5-benefits-of-wireless-internet-in-the-workplace             301
+/2018/04/27/why-should-businesses-use-cloud-computing                    /knowledge/why-should-businesses-use-cloud-computing                    301
+/2018/04/27/why-should-businesses-use-cloud-computing/                   /knowledge/why-should-businesses-use-cloud-computing                    301
+/2018/03/07/fingerprint-scanning                                         /knowledge/fingerprint-scanning                                         301
+/2018/03/07/fingerprint-scanning/                                        /knowledge/fingerprint-scanning                                         301
+/2018/01/29/intels-spectre-meltdown-story-continues                      /knowledge/intels-spectre-meltdown-story-continues                      301
+/2018/01/29/intels-spectre-meltdown-story-continues/                     /knowledge/intels-spectre-meltdown-story-continues                      301
+/2018/01/08/cybersecurity-policies-multi-generational-workplace          /knowledge/cybersecurity-policies-multi-generational-workplace          301
+/2018/01/08/cybersecurity-policies-multi-generational-workplace/         /knowledge/cybersecurity-policies-multi-generational-workplace          301
+/2018/01/01/important-smbs-manage-software-asssets                       /knowledge/important-smbs-manage-software-asssets                       301
+/2018/01/01/important-smbs-manage-software-asssets/                      /knowledge/important-smbs-manage-software-asssets                       301
+/2017/12/25/amazon-echo-showing-workplace                                /knowledge/amazon-echo-showing-workplace                                301
+/2017/12/25/amazon-echo-showing-workplace/                               /knowledge/amazon-echo-showing-workplace                                301
+/2017/12/18/small-business-likely-targeted-cyber-attack                  /knowledge/small-business-likely-targeted-cyber-attack                  301
+/2017/12/18/small-business-likely-targeted-cyber-attack/                 /knowledge/small-business-likely-targeted-cyber-attack                  301
+/2017/12/11/internet-things-security-challenges                          /knowledge/internet-things-security-challenges                          301
+/2017/12/11/internet-things-security-challenges/                         /knowledge/internet-things-security-challenges                          301
+/2017/12/04/30-free-online-tools-help-grow-business                      /knowledge/30-free-online-tools-help-grow-business                      301
+/2017/12/04/30-free-online-tools-help-grow-business/                     /knowledge/30-free-online-tools-help-grow-business                      301
+/2017/11/27/hybrid-cloud-right-business                                  /knowledge/hybrid-cloud-right-business                                  301
+/2017/11/27/hybrid-cloud-right-business/                                 /knowledge/hybrid-cloud-right-business                                  301
+/2017/11/20/5-tech-solutions-that-make-remote-work-easier                /knowledge/5-tech-solutions-that-make-remote-work-easier                301
+/2017/11/20/5-tech-solutions-that-make-remote-work-easier/               /knowledge/5-tech-solutions-that-make-remote-work-easier                301
+/2017/11/13/6-social-media-security-strategies-need-implement            /knowledge/6-social-media-security-strategies-need-implement            301
+/2017/11/13/6-social-media-security-strategies-need-implement/           /knowledge/6-social-media-security-strategies-need-implement            301
+/2017/11/06/9-technology-problems-affecting-productivity                 /knowledge/9-technology-problems-affecting-productivity                 301
+/2017/11/06/9-technology-problems-affecting-productivity/                /knowledge/9-technology-problems-affecting-productivity                 301
+/2017/10/30/how-it-managed-services-will-save-you-money                  /knowledge/how-it-managed-services-will-save-you-money                  301
+/2017/10/30/how-it-managed-services-will-save-you-money/                 /knowledge/how-it-managed-services-will-save-you-money                  301
+/2017/10/23/the-biggest-problem-with-your-phones-fingerprint-scanner     /knowledge/the-biggest-problem-with-your-phones-fingerprint-scanner     301
+/2017/10/23/the-biggest-problem-with-your-phones-fingerprint-scanner/    /knowledge/the-biggest-problem-with-your-phones-fingerprint-scanner     301
+/2017/10/16/suspected-malicious-email-warning-sign-checklist             /knowledge/suspected-malicious-email-warning-sign-checklist             301
+/2017/10/16/suspected-malicious-email-warning-sign-checklist/            /knowledge/suspected-malicious-email-warning-sign-checklist             301
+/2017/10/09/security-tips-computer-disposal                              /knowledge/security-tips-computer-disposal                              301
+/2017/10/09/security-tips-computer-disposal/                             /knowledge/security-tips-computer-disposal                              301
+/2017/10/02/protecting-business-co-working-spaces                        /knowledge/protecting-business-co-working-spaces                        301
+/2017/10/02/protecting-business-co-working-spaces/                       /knowledge/protecting-business-co-working-spaces                        301
+/2017/09/25/equifax-data-breach-one-worst-leaks                          /knowledge/equifax-data-breach-one-worst-leaks                          301
+/2017/09/25/equifax-data-breach-one-worst-leaks/                         /knowledge/equifax-data-breach-one-worst-leaks                          301
+/2017/09/20/how-to-market-your-business-with-augmented-reality           /knowledge/how-to-market-your-business-with-augmented-reality           301
+/2017/09/20/how-to-market-your-business-with-augmented-reality/          /knowledge/how-to-market-your-business-with-augmented-reality           301
+/2017/09/18/keep-crm-data-secure                                         /knowledge/keep-crm-data-secure                                         301
+/2017/09/18/keep-crm-data-secure/                                        /knowledge/keep-crm-data-secure                                         301
+/2017/09/13/how-to-balance-it-security-and-employee-productivity         /knowledge/how-to-balance-it-security-and-employee-productivity         301
+/2017/09/13/how-to-balance-it-security-and-employee-productivity/        /knowledge/how-to-balance-it-security-and-employee-productivity         301
+/2017/09/11/everything-need-know-switching-byod                          /knowledge/everything-need-know-switching-byod                          301
+/2017/09/11/everything-need-know-switching-byod/                         /knowledge/everything-need-know-switching-byod                          301
+/2017/09/06/6-critical-practices-to-include-in-your-security-policy      /knowledge/6-critical-practices-to-include-in-your-security-policy      301
+/2017/09/06/6-critical-practices-to-include-in-your-security-policy/     /knowledge/6-critical-practices-to-include-in-your-security-policy      301
+/2017/07/27/organization-protected-cyber-threats                         /knowledge/organization-protected-cyber-threats                         301
+/2017/07/27/organization-protected-cyber-threats/                        /knowledge/organization-protected-cyber-threats                         301
+/2017/07/27/technology-can-improve-customer-service                      /knowledge/technology-can-improve-customer-service                      301
+/2017/07/27/technology-can-improve-customer-service/                     /knowledge/technology-can-improve-customer-service                      301
+/2017/07/24/5-ways-minimize-internal-security-threats                    /knowledge/5-ways-minimize-internal-security-threats                    301
+/2017/07/24/5-ways-minimize-internal-security-threats/                   /knowledge/5-ways-minimize-internal-security-threats                    301
+
+# ============================================================
+# Old WordPress service category slugs → new /services/* pages
+# (Best guesses based on the old site nav — update if the actual
+# slugs differ.)
+# ============================================================
+/services/network-security          /services/cybersecurity   301
+/services/network-security/         /services/cybersecurity   301
+/services/business-security         /services/cybersecurity   301
+/services/business-security/        /services/cybersecurity   301
+/services/computer-user-support     /services/managed         301
+/services/computer-user-support/    /services/managed         301
+/services/it-consulting             /services/consulting      301
+/services/it-consulting/            /services/consulting      301
+/services/cloud-solutions           /services/cloud           301
+/services/cloud-solutions/          /services/cloud           301
+/services/telephony-voip            /services/voip            301
+/services/telephony-voip/           /services/voip            301
+
+# ============================================================
+# Old WordPress common pages
+# ============================================================
+/contact-us        /contact      301
+/contact-us/       /contact      301
+/about-us          /about        301
+/about-us/         /about        301
+/can-we-help       /contact      301
+/can-we-help/      /contact      301
+/remote-support    /contact      301
+/remote-support/   /contact      301
+
+# ============================================================
+# WordPress taxonomy / system paths — collapse to nearest match
+# ============================================================
+/category/*     /knowledge    301
+/tag/*          /knowledge    301
+/author/*       /about        301
+/feed           /knowledge    301
+/feed/          /knowledge    301
+/feed/*         /knowledge    301
+/comments/*     /knowledge    301
+/wp-admin       /             301
+/wp-admin/*     /             301
+/wp-login.php   /             301
+/xmlrpc.php     /             301
