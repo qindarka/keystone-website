@@ -5,6 +5,3 @@
 /careers       /about.html#careers  301
 /client        /client-login.html   301
 /employee      /employee-login.html 301
-
-# Cloudflare Pages SPA-style fallback for unknown paths
-/*  /404.html  404
