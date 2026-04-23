@@ -1,9 +1,8 @@
-# Pretty URLs → .html
-/services      /services.html       301
-/about         /about.html          301
-/contact       /contact.html        301
-/careers       /careers.html        301
-/privacy       /privacy.html        301
-/terms         /terms.html          301
-/client        /client-login.html   301
-/employee      /employee-login.html 301
+# Pretty URLs that don't share a name with an .html file get
+# explicit redirects. The .html-named pages (/services, /about,
+# /careers, /contact, /privacy, /terms) are handled automatically
+# by Workers Static Assets via html_handling — adding _redirects
+# rules for them creates a loop with the .html→pretty redirect.
+
+/client        /client-login.html      301
+/employee      /employee-login.html    301
