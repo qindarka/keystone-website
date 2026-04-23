@@ -135,7 +135,7 @@ p { margin: 0 0 1em; color: var(--slate); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--navy);
+  background: var(--navy) !important;
   color: var(--white) !important;
   padding: 11px 20px !important;
   border-radius: 10px !important;
@@ -238,6 +238,27 @@ p { margin: 0 0 1em; color: var(--slate); }
   vertical-align: middle;
   position: relative;
   top: -1px;
+}
+
+/* On dark (navy) backgrounds the translucent yellow pill blends into the
+   backdrop and the navy text disappears. Use a solid gold pill with
+   dark navy text in those contexts so it pops. */
+.hero .eyebrow,
+.page-header .eyebrow,
+.feature-visual .eyebrow,
+.info-card .eyebrow,
+.section-dark .eyebrow {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--navy-darker);
+}
+.hero .eyebrow .dot,
+.page-header .eyebrow .dot,
+.feature-visual .eyebrow .dot,
+.info-card .eyebrow .dot,
+.section-dark .eyebrow .dot {
+  background: var(--navy-darker);
+  box-shadow: 0 0 0 3px rgba(0, 35, 57, 0.22);
 }
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
