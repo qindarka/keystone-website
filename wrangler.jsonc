@@ -21,6 +21,22 @@
 		"LEAD_WEBHOOK_URL": "",
 		"BUSINESS_HOURS": "Mon-Fri 8:30am-4:30pm ET"
 	},
+	"unsafe": {
+		"bindings": [
+			{
+				"name": "CHAT_RL",
+				"type": "ratelimit",
+				"namespace_id": "1001",
+				"simple": { "limit": 15, "period": 60 }
+			},
+			{
+				"name": "LEAD_RL",
+				"type": "ratelimit",
+				"namespace_id": "1002",
+				"simple": { "limit": 3, "period": 60 }
+			}
+		]
+	},
 	"observability": {
 		"enabled": true
 	}

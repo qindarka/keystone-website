@@ -14,6 +14,28 @@ const ANTHROPIC_URL = 'https://api.anthropic.com/v1/messages';
 const RESEND_URL = 'https://api.resend.com/emails';
 const TRANSCRIPT_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
 
+// ---- security limits ------------------------------------------------------
+const MAX_BODY_BYTES = 32 * 1024;       // reject any request body over 32 KB
+const MAX_MESSAGES = 30;                // cap conversation length
+const MAX_CHARS_PER_MESSAGE = 1500;     // cap individual message size
+const MAX_OUTPUT_TOKENS = 512;          // cap Anthropic reply length
+const ALLOWED_ORIGINS = new Set([
+  'https://keystone-website.keystonetech.workers.dev',
+  'https://keystonetech.ca',
+  'https://www.keystonetech.ca',
+  'http://localhost:8787',
+  'http://127.0.0.1:8787',
+]);
+
+// Lead-field allow-lists (must mirror the system prompt's allowed values)
+const SEAT_BUCKETS = ['1-10', '11-25', '26-75', '76-150', '150+'];
+const TIMELINES = ['ASAP', '30 days', 'this quarter', 'researching'];
+const CURRENT_IT = ['in-house', 'another MSP', 'nothing formal', 'not sure'];
+const PROSPECT_CATS = ['security', 'managed', 'voip', 'cloud', 'broken', 'just_looking'];
+const CLIENT_CATS = ['client_urgent', 'client_general'];
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -33,6 +55,15 @@ export default {
 // -------------------------------------------------------------- /api/chat
 
 async function handleChat(request, env, ctx) {
+  if (!checkOrigin(request)) return jsonError(403, 'forbidden_origin');
+  if (!withinSizeLimit(request)) return jsonError(413, 'too_large');
+
+  const ip = clientIp(request);
+  if (env.CHAT_RL) {
+    const { success } = await env.CHAT_RL.limit({ key: ip });
+    if (!success) return jsonError(429, 'rate_limited');
+  }
+
   let body;
   try {
     body = await request.json();
@@ -41,14 +72,13 @@ async function handleChat(request, env, ctx) {
   }
 
   const messages = Array.isArray(body.messages) ? body.messages : null;
-  const sessionId = typeof body.session_id === 'string' ? body.session_id : null;
-  const page = typeof body.page === 'string' ? body.page : 'unknown';
+  const sessionId = typeof body.session_id === 'string' && UUID_RE.test(body.session_id) ? body.session_id : null;
+  const page = typeof body.page === 'string' ? body.page.slice(0, 32) : 'unknown';
 
   if (!messages || !sessionId) {
     return jsonError(400, 'missing_fields');
   }
-  if (messages.length > 60) {
-    // Soft cap to keep costs sane and discourage abuse.
+  if (messages.length > MAX_MESSAGES) {
     return jsonError(400, 'too_many_messages');
   }
 
@@ -68,7 +98,7 @@ async function handleChat(request, env, ctx) {
     },
     body: JSON.stringify({
       model: ANTHROPIC_MODEL,
-      max_tokens: 1024,
+      max_tokens: MAX_OUTPUT_TOKENS,
       system: systemPrompt,
       messages: messages.map(sanitizeMessage),
     }),
@@ -92,7 +122,7 @@ async function handleChat(request, env, ctx) {
 
 function sanitizeMessage(m) {
   const role = m.role === 'assistant' ? 'assistant' : 'user';
-  const content = typeof m.content === 'string' ? m.content.slice(0, 4000) : '';
+  const content = typeof m.content === 'string' ? m.content.slice(0, MAX_CHARS_PER_MESSAGE) : '';
   return { role, content };
 }
 
@@ -141,6 +171,15 @@ async function saveTranscript(env, sessionId, page, messages, latestReply) {
 // -------------------------------------------------------------- /api/lead
 
 async function handleLead(request, env, ctx) {
+  if (!checkOrigin(request)) return jsonError(403, 'forbidden_origin');
+  if (!withinSizeLimit(request)) return jsonError(413, 'too_large');
+
+  const ip = clientIp(request);
+  if (env.LEAD_RL) {
+    const { success } = await env.LEAD_RL.limit({ key: ip });
+    if (!success) return jsonError(429, 'rate_limited');
+  }
+
   let body;
   try {
     body = await request.json();
@@ -148,9 +187,15 @@ async function handleLead(request, env, ctx) {
     return jsonError(400, 'invalid_json');
   }
 
+  const sessionId = typeof body.session_id === 'string' && UUID_RE.test(body.session_id) ? body.session_id : null;
   const lead = body.lead;
-  const sessionId = body.session_id;
   if (!lead || !sessionId) return jsonError(400, 'missing_fields');
+
+  const validationError = validateLead(lead);
+  if (validationError) {
+    console.warn('lead_rejected', validationError);
+    return jsonError(400, validationError);
+  }
 
   const score = scoreLead(lead);
   const enriched = {
@@ -347,6 +392,59 @@ If the user explicitly asks to talk to a person, skip the qualifying questions, 
 
 # Page context
 The user is currently on the "${page}" page of the Keystone website.`;
+}
+
+// -------------------------------------------------------------- security
+
+function checkOrigin(request) {
+  const origin = request.headers.get('origin');
+  if (origin && ALLOWED_ORIGINS.has(origin)) return true;
+
+  // Some browsers (notably same-origin POSTs in older Safari) omit Origin.
+  // Fall back to Referer in that case.
+  const referer = request.headers.get('referer');
+  if (referer) {
+    try {
+      if (ALLOWED_ORIGINS.has(new URL(referer).origin)) return true;
+    } catch {
+      // malformed Referer
+    }
+  }
+  return false;
+}
+
+function withinSizeLimit(request) {
+  const cl = parseInt(request.headers.get('content-length') || '0', 10);
+  return cl <= MAX_BODY_BYTES;
+}
+
+function clientIp(request) {
+  // Cloudflare always sets CF-Connecting-IP; fall back so dev/curl still works.
+  return request.headers.get('cf-connecting-ip')
+    || request.headers.get('x-forwarded-for')
+    || 'unknown';
+}
+
+function validateLead(lead) {
+  if (!lead || typeof lead !== 'object') return 'lead_not_object';
+  if (!['prospect', 'client'].includes(lead.type)) return 'bad_type';
+
+  if (lead.type === 'prospect' && lead.category != null && !PROSPECT_CATS.includes(lead.category)) return 'bad_category';
+  if (lead.type === 'client' && lead.category != null && !CLIENT_CATS.includes(lead.category)) return 'bad_category';
+
+  if (lead.seats != null && !SEAT_BUCKETS.includes(lead.seats)) return 'bad_seats';
+  if (lead.timeline != null && !TIMELINES.includes(lead.timeline)) return 'bad_timeline';
+  if (lead.current_it != null && !CURRENT_IT.includes(lead.current_it)) return 'bad_current_it';
+
+  if (lead.email != null) {
+    if (typeof lead.email !== 'string' || lead.email.length > 200 || !EMAIL_RE.test(lead.email)) return 'bad_email';
+  }
+  if (lead.name != null && (typeof lead.name !== 'string' || lead.name.length > 200)) return 'bad_name';
+  if (lead.phone != null && (typeof lead.phone !== 'string' || lead.phone.length > 60)) return 'bad_phone';
+  if (lead.company != null && (typeof lead.company !== 'string' || lead.company.length > 200)) return 'bad_company';
+  if (lead.transcript_summary != null && (typeof lead.transcript_summary !== 'string' || lead.transcript_summary.length > 2000)) return 'bad_summary';
+
+  return null;
 }
 
 // -------------------------------------------------------------- helpers
