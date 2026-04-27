@@ -1,13 +1,27 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "keystone-website",
-  "compatibility_date": "2026-04-23",
-  "assets": {
-    "directory": ".",
-    "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
-  },
-  "observability": {
-    "enabled": true
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "keystone-website",
+	"main": "src/worker.js",
+	"compatibility_date": "2026-04-23",
+	"assets": {
+		"directory": ".",
+		"binding": "ASSETS",
+		"not_found_handling": "404-page",
+		"html_handling": "auto-trailing-slash"
+	},
+	"kv_namespaces": [
+		{
+			"binding": "CHAT_KV",
+			"id": "d67ca477762d425db2bc8cfe47369bd3"
+		}
+	],
+	"vars": {
+		"FROM_EMAIL": "Keystone <noreply@updates.kct.ca>",
+		"TO_EMAIL": "sales@keystonetech.ca",
+		"LEAD_WEBHOOK_URL": "",
+		"BUSINESS_HOURS": "Mon-Fri 8:30am-4:30pm ET"
+	},
+	"observability": {
+		"enabled": true
+	}
 }

@@ -1,0 +1,10 @@
+# Copy this file to `.dev.vars` for local `wrangler dev` runs.
+# `.dev.vars` is gitignored. Production secrets live in Cloudflare,
+# set via: npx wrangler secret put <NAME>
+
+ANTHROPIC_API_KEY=sk-ant-api03-xxxxxxxxxxxxxxxxxxxx
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+
+# When DEV_MODE=true the worker logs leads to the console
+# instead of actually sending email or hitting the webhook.
+DEV_MODE=true

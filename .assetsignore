@@ -21,6 +21,10 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
+# Worker source (runs server-side; never serve as a static asset)
+src
+src/**
+
 # Editor / OS junk
 .vscode
 .idea
