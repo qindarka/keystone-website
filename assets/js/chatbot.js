@@ -369,6 +369,12 @@
     } else if (!on && existing) {
       existing.remove();
     }
+
+    // Re-enabling a disabled input doesn't restore focus on its own.
+    // Put the cursor back so the user can keep typing without clicking.
+    if (!on && isOpen) {
+      requestAnimationFrame(() => input.focus());
+    }
   }
 
   function scrollToBottom() {
