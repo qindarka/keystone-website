@@ -16,7 +16,7 @@ const TRANSCRIPT_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
 
 // ---- security limits ------------------------------------------------------
 const MAX_BODY_BYTES = 32 * 1024;       // reject any request body over 32 KB
-const MAX_MESSAGES = 30;                // cap conversation length
+const MAX_MESSAGES = 80;                // soft cap; longer histories get trimmed
 const MAX_CHARS_PER_MESSAGE = 1500;     // cap individual message size
 const MAX_OUTPUT_TOKENS = 512;          // cap Anthropic reply length
 const ALLOWED_ORIGINS = new Set([
@@ -78,8 +78,14 @@ async function handleChat(request, env, ctx) {
   if (!messages || !sessionId) {
     return jsonError(400, 'missing_fields');
   }
-  if (messages.length > MAX_MESSAGES) {
-    return jsonError(400, 'too_many_messages');
+
+  // Soft-trim long histories so a chatty visitor doesn't get a hard error.
+  // Keep the most recent MAX_MESSAGES, and ensure the trimmed array starts
+  // with a user turn (Anthropic requires user/assistant alternation).
+  let convo = messages;
+  if (convo.length > MAX_MESSAGES) {
+    convo = convo.slice(-MAX_MESSAGES);
+    if (convo[0]?.role === 'assistant') convo = convo.slice(1);
   }
 
   const systemPrompt = buildSystemPrompt({
@@ -100,7 +106,7 @@ async function handleChat(request, env, ctx) {
       model: ANTHROPIC_MODEL,
       max_tokens: MAX_OUTPUT_TOKENS,
       system: systemPrompt,
-      messages: messages.map(sanitizeMessage),
+      messages: convo.map(sanitizeMessage),
     }),
   });
 
