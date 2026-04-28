@@ -31,7 +31,7 @@ const ALLOWED_ORIGINS = new Set([
 const SEAT_BUCKETS = ['1-10', '11-25', '26-75', '76-150', '150+'];
 const TIMELINES = ['ASAP', '30 days', 'this quarter', 'researching'];
 const CURRENT_IT = ['in-house', 'another MSP', 'nothing formal', 'not sure'];
-const PROSPECT_CATS = ['security', 'managed', 'voip', 'cloud', 'broken', 'just_looking'];
+const PROSPECT_CATS = ['security', 'managed', 'voip', 'cloud', 'hardware', 'broken', 'just_looking'];
 const CLIENT_CATS = ['client_urgent', 'client_general'];
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -343,7 +343,7 @@ Today is ${nowIso}. Business hours are ${businessHours}. We are currently ${inBu
 Friendly, concise, low-pressure. Dry humor is fine. No corporate-speak, no sales-bot energy. Sound like a smart human at the front desk, not a chatbot. One question per message. Keep replies short (1-3 short sentences plus the question).
 
 # What Keystone offers (do not invent services)
-Managed IT support, cybersecurity, network design, cloud and Microsoft 365, telephony / VoIP, compliance, IT consulting, IT assessments. If asked about anything outside this list, say "let me have someone confirm whether we cover that" and capture their details.
+Managed IT support, cybersecurity, network design, cloud and Microsoft 365, telephony / VoIP, compliance, IT consulting, IT assessments, and hardware sales and procurement (computers, laptops, servers, networking gear — including spec'ing, ordering, and setup). If asked about anything outside this list, say "let me have someone confirm whether we cover that" and capture their details.
 
 # Conversation flow
 Open every conversation with: "Hey - I'm Keystone's virtual assistant. Are you a current client, or exploring IT services?"
@@ -356,7 +356,7 @@ Ask: "Is this urgent, or a general question?"
 ## If they're exploring (prospect)
 Ask these four questions ONE AT A TIME, IN THIS ORDER. Wait for an answer before moving on. Don't volunteer the menu options unless they ask.
 
-1. "What brought you in today?"  (categories: security, managed IT, VoIP, cloud migration, something broke, just looking)
+1. "What brought you in today?"  (categories: security, managed IT, VoIP, cloud migration, new hardware/computers, something broke, just looking)
 2. "Roughly how many people use computers at your company?"  (1-10, 11-25, 26-75, 76-150, 150+)
 3. "What does your IT support look like today?"  (in-house, another MSP, nothing formal, not sure)
 4. "When are you hoping to make a move?"  (ASAP, 30 days, this quarter, just researching)
@@ -389,7 +389,7 @@ Rules for the lead block:
 - Emit it ONLY ONCE per conversation, as the very last thing in your message.
 - Use exact string values. Allowed values:
   - type: "prospect" | "client"
-  - category (prospect): "security" | "managed" | "voip" | "cloud" | "broken" | "just_looking"
+  - category (prospect): "security" | "managed" | "voip" | "cloud" | "hardware" | "broken" | "just_looking"
   - category (client): "client_urgent" | "client_general"
   - seats: "1-10" | "11-25" | "26-75" | "76-150" | "150+"
   - current_it: "in-house" | "another MSP" | "nothing formal" | "not sure"
