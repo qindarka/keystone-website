@@ -253,18 +253,24 @@ async function notifyLead(env, lead) {
   }
 
   // Resend email
-  if (env.RESEND_API_KEY) {
+  if (!env.RESEND_API_KEY) {
+    console.warn('resend_skipped: RESEND_API_KEY is not set');
+  } else {
     try {
+      const payload = buildEmail(env, lead);
       const resp = await fetch(RESEND_URL, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
           authorization: `Bearer ${env.RESEND_API_KEY}`,
         },
-        body: JSON.stringify(buildEmail(env, lead)),
+        body: JSON.stringify(payload),
       });
+      const respBody = await resp.text();
       if (!resp.ok) {
-        console.error('resend_failed', resp.status, await resp.text());
+        console.error('resend_failed', resp.status, respBody);
+      } else {
+        console.log('resend_sent', resp.status, 'to', payload.to, 'from', payload.from, 'body', respBody);
       }
     } catch (err) {
       console.error('resend_threw', err.message);
