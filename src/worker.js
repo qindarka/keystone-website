@@ -310,9 +310,11 @@ function buildEmail(env, lead) {
       ${lead.email ? `<p style="margin-top:18px;"><a href="mailto:${escapeAttr(lead.email)}" style="background:#004876;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600;">Reply to ${escapeHtml(lead.name || lead.email)}</a></p>` : ''}
     </div>`;
 
+  const recipients = env.TO_EMAIL.split(',').map((s) => s.trim()).filter(Boolean);
+
   return {
     from: env.FROM_EMAIL,
-    to: env.TO_EMAIL,
+    to: recipients,
     subject,
     html,
     reply_to: lead.email || undefined,
