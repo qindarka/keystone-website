@@ -54,21 +54,37 @@ function keystone_import_demo_content() {
 	$wxr = KEYSTONE_DIR . '/inc/demo-content.xml';
 	if ( ! file_exists( $wxr ) ) return new WP_Error( 'no_wxr', 'demo-content.xml is missing from the theme.' );
 
-	// Make sure the WP importer is available; install it on the fly if not.
 	if ( ! class_exists( 'WP_Importer' ) ) {
 		require_once ABSPATH . 'wp-admin/includes/class-wp-importer.php';
 	}
-	if ( ! class_exists( 'WXR_Parser' ) ) {
-		// The WordPress Importer plugin ships the parser; if not present,
-		// we fall back to a minimal inline import path below.
-		$plugin = WP_PLUGIN_DIR . '/wordpress-importer/wordpress-importer.php';
-		if ( file_exists( $plugin ) ) {
-			require_once $plugin;
+
+	// The WP Importer plugin's main file early-returns unless
+	// WP_LOAD_IMPORTERS is defined (it's normally only set on the Tools →
+	// Import screen). At plugin-load time WP saw the early return, so the
+	// WP_Import class is never defined under normal admin requests, and
+	// require_once on the main file is a no-op since it's already loaded.
+	// Bypass by loading the inner files (parsers + class-wp-import) directly.
+	if ( ! class_exists( 'WP_Import' ) ) {
+		$plugin_dir = WP_PLUGIN_DIR . '/wordpress-importer';
+		if ( is_dir( $plugin_dir ) ) {
+			if ( ! defined( 'WP_LOAD_IMPORTERS' ) ) define( 'WP_LOAD_IMPORTERS', true );
+
+			// Parser layout varies between plugin versions.
+			if ( file_exists( $plugin_dir . '/parsers.php' ) ) {
+				require_once $plugin_dir . '/parsers.php';
+			} elseif ( is_dir( $plugin_dir . '/parsers' ) ) {
+				foreach ( glob( $plugin_dir . '/parsers/*.php' ) as $f ) {
+					require_once $f;
+				}
+			}
+
+			if ( file_exists( $plugin_dir . '/class-wp-import.php' ) ) {
+				require_once $plugin_dir . '/class-wp-import.php';
+			}
 		}
 	}
 
 	if ( class_exists( 'WP_Import' ) ) {
-		// Standard path: WordPress Importer plugin is installed.
 		$importer = new WP_Import();
 		$importer->fetch_attachments = false;
 		ob_start();
@@ -77,7 +93,7 @@ function keystone_import_demo_content() {
 		return true;
 	}
 
-	// Fallback: tell the admin to install WordPress Importer.
+	// Fallback: WP Importer is genuinely missing.
 	wp_die(
 		'<h1>WordPress Importer plugin required</h1>' .
 		'<p>To import demo content, please first install the free <a href="' . esc_url( admin_url( 'plugin-install.php?s=wordpress+importer&tab=search&type=term' ) ) . '">WordPress Importer</a> plugin, then return here and click "Import demo content" again.</p>',
