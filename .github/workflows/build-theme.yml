@@ -1,0 +1,46 @@
+name: Build WordPress theme zip
+
+on:
+  push:
+    branches: [ wordpress-theme ]
+    paths:
+      - 'wordpress-theme/**'
+      - '.github/workflows/build-theme.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build keystone.zip
+        run: |
+          cd wordpress-theme
+          zip -r ../keystone.zip keystone -x "*.DS_Store"
+          ls -lh ../keystone.zip
+
+      - name: Upload as workflow artifact (always)
+        uses: actions/upload-artifact@v4
+        with:
+          name: keystone-theme
+          path: keystone.zip
+          retention-days: 90
+
+      - name: Publish/update Release "wordpress-theme-latest"
+        if: github.ref == 'refs/heads/wordpress-theme'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: wordpress-theme-latest
+          name: WordPress theme — latest build
+          body: |
+            Built from commit ${{ github.sha }} on branch `wordpress-theme`.
+
+            Download `keystone.zip` below and upload it via
+            **WP Admin → Appearance → Themes → Add New → Upload Theme**.
+          files: keystone.zip
+          prerelease: false
+          make_latest: 'false'
