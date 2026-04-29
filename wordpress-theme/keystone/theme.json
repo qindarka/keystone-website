@@ -3,7 +3,6 @@
   "version": 2,
   "settings": {
     "appearanceTools": true,
-    "useRootPaddingAwareAlignments": true,
     "layout": {
       "contentSize": "768px",
       "wideSize": "1200px"
