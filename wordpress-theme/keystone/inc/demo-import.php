@@ -2,10 +2,11 @@
 /**
  * One-click demo content importer.
  *
- * After activating the theme, an admin notice offers to import the bundled
- * WXR file (inc/demo-content.xml) so the site materializes with all pages,
- * services and articles already populated. Useful for the dev.kct.ca dry
- * run; harmless on a real production install (just don't click the button).
+ * Self-contained: parses the bundled WXR with SimpleXML and calls
+ * wp_insert_post() for each item. Doesn't depend on the WordPress
+ * Importer plugin (which has surprising boot-order quirks on shared
+ * hosting). Skips items whose slug already exists, so re-running is
+ * safe and idempotent.
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -22,7 +23,7 @@ add_action( 'admin_notices', function () {
 	);
 	?>
 	<div class="notice notice-info" style="border-left-color:#004876;">
-		<p style="font-size:14px;"><strong>Keystone theme:</strong> Import demo content (all pages, 8 services, ~50 knowledge articles) so you can see the site populated. You can edit or delete anything afterwards.</p>
+		<p style="font-size:14px;"><strong>Keystone theme:</strong> Import demo content (all pages, 8 services, ~50 knowledge articles) so you can see the site populated. Safe to re-run — already-imported items are skipped.</p>
 		<p>
 			<a href="<?php echo esc_url( $import_url ); ?>" class="button button-primary">Import demo content</a>
 			<a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'keystone-skip-demo', '1', admin_url() ), 'keystone_skip_demo' ) ); ?>" class="button">Skip — I'll start blank</a>
@@ -43,61 +44,126 @@ add_action( 'admin_init', function () {
 
 	if ( isset( $_GET['keystone-import-demo'] ) ) {
 		check_admin_referer( 'keystone_import_demo' );
-		keystone_import_demo_content();
+		$result = keystone_import_demo_content();
+
+		if ( is_wp_error( $result ) ) {
+			wp_die(
+				'<h1>Demo import failed</h1><p>' . esc_html( $result->get_error_message() ) . '</p>',
+				'Import error',
+				[ 'response' => 200, 'back_link' => true ]
+			);
+		}
+
 		update_option( KEYSTONE_DEMO_FLAG, 'imported' );
-		wp_safe_redirect( admin_url( 'edit.php?post_status=publish&post_type=page' ) );
+		wp_safe_redirect( add_query_arg( 'keystone-imported', (int) $result, admin_url( 'edit.php?post_status=publish&post_type=page' ) ) );
 		exit;
 	}
 } );
 
+/**
+ * Parse demo-content.xml and create posts one at a time.
+ *
+ * Uses SimpleXML (built into PHP — no plugin dependency). Idempotent:
+ * if a post with the same slug + post_type already exists, it's skipped.
+ *
+ * @return int|WP_Error  Count of items inserted, or WP_Error on parse failure.
+ */
 function keystone_import_demo_content() {
+	@ini_set( 'memory_limit', '512M' );
+	@set_time_limit( 300 );
+
 	$wxr = KEYSTONE_DIR . '/inc/demo-content.xml';
-	if ( ! file_exists( $wxr ) ) return new WP_Error( 'no_wxr', 'demo-content.xml is missing from the theme.' );
-
-	if ( ! class_exists( 'WP_Importer' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/class-wp-importer.php';
+	if ( ! file_exists( $wxr ) ) {
+		return new WP_Error( 'no_wxr', 'demo-content.xml is missing from the theme.' );
 	}
 
-	// The WP Importer plugin's main file early-returns unless
-	// WP_LOAD_IMPORTERS is defined (it's normally only set on the Tools →
-	// Import screen). At plugin-load time WP saw the early return, so the
-	// WP_Import class is never defined under normal admin requests, and
-	// require_once on the main file is a no-op since it's already loaded.
-	// Bypass by loading the inner files (parsers + class-wp-import) directly.
-	if ( ! class_exists( 'WP_Import' ) ) {
-		$plugin_dir = WP_PLUGIN_DIR . '/wordpress-importer';
-		if ( is_dir( $plugin_dir ) ) {
-			if ( ! defined( 'WP_LOAD_IMPORTERS' ) ) define( 'WP_LOAD_IMPORTERS', true );
+	libxml_use_internal_errors( true );
+	$xml = simplexml_load_file( $wxr );
+	if ( ! $xml ) {
+		$errs = array_map( function ( $e ) { return trim( $e->message ); }, libxml_get_errors() );
+		libxml_clear_errors();
+		return new WP_Error( 'bad_xml', 'Could not parse demo-content.xml: ' . implode( '; ', $errs ) );
+	}
 
-			// Parser layout varies between plugin versions.
-			if ( file_exists( $plugin_dir . '/parsers.php' ) ) {
-				require_once $plugin_dir . '/parsers.php';
-			} elseif ( is_dir( $plugin_dir . '/parsers' ) ) {
-				foreach ( glob( $plugin_dir . '/parsers/*.php' ) as $f ) {
-					require_once $f;
-				}
-			}
+	// Make sure the "Knowledge" category exists before we attach posts to it.
+	if ( ! term_exists( 'knowledge', 'category' ) ) {
+		wp_insert_term( 'Knowledge', 'category', [ 'slug' => 'knowledge' ] );
+	}
 
-			if ( file_exists( $plugin_dir . '/class-wp-import.php' ) ) {
-				require_once $plugin_dir . '/class-wp-import.php';
-			}
+	// Speed up bulk inserts.
+	wp_defer_term_counting( true );
+	wp_defer_comment_counting( true );
+	wp_suspend_cache_invalidation( true );
+
+	$count   = 0;
+	$skipped = 0;
+
+	$NS_WP      = 'http://wordpress.org/export/1.2/';
+	$NS_CONTENT = 'http://purl.org/rss/1.0/modules/content/';
+	$NS_EXCERPT = 'http://wordpress.org/export/1.2/excerpt/';
+
+	foreach ( $xml->channel->item as $item ) {
+		$wp      = $item->children( $NS_WP );
+		$content = $item->children( $NS_CONTENT )->encoded ?? '';
+		$excerpt = $item->children( $NS_EXCERPT )->encoded ?? '';
+
+		$post_type = (string) ( $wp->post_type ?? 'post' );
+		$slug      = (string) ( $wp->post_name ?? '' );
+		$status    = (string) ( $wp->status    ?? 'publish' );
+		$title     = (string) $item->title;
+
+		if ( ! $slug || ! $title ) { $skipped++; continue; }
+
+		// Idempotency: skip if a post with this slug + type already exists.
+		$existing = get_page_by_path( $slug, OBJECT, $post_type );
+		if ( $existing ) { $skipped++; continue; }
+
+		$postarr = [
+			'post_title'     => $title,
+			'post_name'      => $slug,
+			'post_content'   => (string) $content,
+			'post_excerpt'   => (string) $excerpt,
+			'post_status'    => $status,
+			'post_type'      => $post_type,
+			'menu_order'     => (int) ( $wp->menu_order ?? 0 ),
+			'comment_status' => 'closed',
+			'ping_status'    => 'closed',
+		];
+
+		$post_date = (string) ( $wp->post_date ?? '' );
+		if ( $post_date ) {
+			$postarr['post_date']     = $post_date;
+			$postarr['post_date_gmt'] = $post_date;
 		}
+
+		$post_id = wp_insert_post( $postarr, true );
+		if ( is_wp_error( $post_id ) ) { $skipped++; continue; }
+
+		// Posts → attach to category(ies) listed in the WXR <category> nodes.
+		if ( $post_type === 'post' ) {
+			$cat_ids = [];
+			foreach ( $item->category as $c ) {
+				$nicename = (string) $c['nicename'];
+				if ( ! $nicename ) continue;
+				$term = get_term_by( 'slug', $nicename, 'category' );
+				if ( $term ) $cat_ids[] = (int) $term->term_id;
+			}
+			if ( $cat_ids ) wp_set_post_categories( $post_id, $cat_ids );
+		}
+
+		$count++;
 	}
 
-	if ( class_exists( 'WP_Import' ) ) {
-		$importer = new WP_Import();
-		$importer->fetch_attachments = false;
-		ob_start();
-		$importer->import( $wxr );
-		ob_end_clean();
-		return true;
-	}
+	wp_defer_term_counting( false );
+	wp_defer_comment_counting( false );
+	wp_suspend_cache_invalidation( false );
 
-	// Fallback: WP Importer is genuinely missing.
-	wp_die(
-		'<h1>WordPress Importer plugin required</h1>' .
-		'<p>To import demo content, please first install the free <a href="' . esc_url( admin_url( 'plugin-install.php?s=wordpress+importer&tab=search&type=term' ) ) . '">WordPress Importer</a> plugin, then return here and click "Import demo content" again.</p>',
-		'Importer required',
-		[ 'response' => 200, 'back_link' => true ]
-	);
+	return $count;
 }
+
+// Friendly success notice after import.
+add_action( 'admin_notices', function () {
+	if ( empty( $_GET['keystone-imported'] ) ) return;
+	$n = (int) $_GET['keystone-imported'];
+	echo '<div class="notice notice-success is-dismissible"><p><strong>Keystone:</strong> Imported ' . $n . ' items. Existing slugs were skipped.</p></div>';
+} );
