@@ -1048,3 +1048,29 @@ textarea:focus-visible,
   .kn-pager { grid-template-columns: 1fr; }
   .kn-nav-next { text-align: left; }
 }
+
+/* ============ WordPress block theme overrides ============ */
+/*
+ * The static-site CSS above doesn't know about FSE wrappers. WP injects
+ * <wp-site-blocks> at the root and applies a default vertical block-gap
+ * margin between consecutive root blocks (header → main → footer). That
+ * shows the .site-header border-bottom as a faint grey/blue line above
+ * the navy hero. Kill the gap so the hero butts up under the header,
+ * matching the static site.
+ */
+.wp-site-blocks > main,
+body > main {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.wp-site-blocks > footer,
+body > footer {
+  margin-block-start: 0;
+}
+
+/* The block editor sometimes wraps the post content in an extra group
+ * with default block-gap. Reset that for our top-level main wrapper. */
+main.wp-block-group > * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
