@@ -16,6 +16,7 @@ define( 'KEYSTONE_URL', get_stylesheet_directory_uri() );
 require_once KEYSTONE_DIR . '/inc/post-types.php';
 require_once KEYSTONE_DIR . '/inc/patterns.php';
 require_once KEYSTONE_DIR . '/inc/chatbot.php';
+require_once KEYSTONE_DIR . '/inc/shortcodes.php';
 require_once KEYSTONE_DIR . '/inc/demo-import.php';
 
 // ---- Theme supports & cleanup -------------------------------------------

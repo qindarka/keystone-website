@@ -171,6 +171,41 @@ for (const p of TOP_PAGES) {
   }));
 }
 
+// ---- 2b) Knowledge index page (hero + shortcode auto-grid) -----------
+
+const knowledgeContent = [
+  '<!-- wp:html -->',
+  '<section class="page-header">',
+  '  <div class="container">',
+  '    <div class="crumb"><a href="/">Home</a> &rsaquo; Knowledge</div>',
+  '    <h1>Articles &amp; insights</h1>',
+  '    <p>Practical guidance on managed IT, cybersecurity, cloud, compliance and the technology that runs your business — from the Keystone Technologies team.</p>',
+  '  </div>',
+  '</section>',
+  '',
+  '<section class="section">',
+  '  <div class="container">',
+  '<!-- /wp:html -->',
+  '',
+  '<!-- wp:shortcode -->',
+  '[keystone_knowledge_grid]',
+  '<!-- /wp:shortcode -->',
+  '',
+  '<!-- wp:html -->',
+  '  </div>',
+  '</section>',
+  '<!-- /wp:html -->',
+].join('\n');
+
+items.push(makeItem({
+  id: nextId++,
+  title: 'Knowledge',
+  slug: 'knowledge',
+  content: knowledgeContent,
+  postType: 'page',
+  excerpt: 'Articles, insights and how-tos from the Keystone Technologies team.',
+}));
+
 // ---- 3) Services (custom post type) -----------------------------------
 
 const SERVICE_TITLES = {

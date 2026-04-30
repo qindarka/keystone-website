@@ -15,19 +15,30 @@ const KEYSTONE_DEMO_FLAG = 'keystone_demo_imported';
 
 add_action( 'admin_notices', function () {
 	if ( ! current_user_can( 'manage_options' ) ) return;
-	if ( get_option( KEYSTONE_DEMO_FLAG ) ) return;
+
+	$flag = get_option( KEYSTONE_DEMO_FLAG );
+	if ( $flag === 'skipped' ) return;
+
+	$first_run = empty( $flag );
 
 	$import_url = wp_nonce_url(
 		add_query_arg( 'keystone-import-demo', '1', admin_url() ),
 		'keystone_import_demo'
 	);
 	?>
-	<div class="notice notice-info" style="border-left-color:#004876;">
-		<p style="font-size:14px;"><strong>Keystone theme:</strong> Import demo content (all pages, 8 services, ~50 knowledge articles) so you can see the site populated. Safe to re-run — already-imported items are skipped.</p>
-		<p>
-			<a href="<?php echo esc_url( $import_url ); ?>" class="button button-primary">Import demo content</a>
-			<a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'keystone-skip-demo', '1', admin_url() ), 'keystone_skip_demo' ) ); ?>" class="button">Skip — I'll start blank</a>
-		</p>
+	<div class="notice notice-info <?php echo $first_run ? '' : 'is-dismissible'; ?>" style="border-left-color:#004876;">
+		<?php if ( $first_run ) : ?>
+			<p style="font-size:14px;"><strong>Keystone theme:</strong> Import demo content (all pages, 8 services, ~50 knowledge articles) so you can see the site populated. Safe to re-run — already-imported items are skipped.</p>
+			<p>
+				<a href="<?php echo esc_url( $import_url ); ?>" class="button button-primary">Import demo content</a>
+				<a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'keystone-skip-demo', '1', admin_url() ), 'keystone_skip_demo' ) ); ?>" class="button">Skip — I'll start blank</a>
+			</p>
+		<?php else : ?>
+			<p style="font-size:14px;"><strong>Keystone theme:</strong> Demo content was previously imported. If a theme update added new pages (e.g. a Knowledge page or new Service), re-run the import to pull them in. Existing slugs are skipped, so this is always safe.</p>
+			<p>
+				<a href="<?php echo esc_url( $import_url ); ?>" class="button">Re-run demo import</a>
+			</p>
+		<?php endif; ?>
 	</div>
 	<?php
 } );

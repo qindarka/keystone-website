@@ -44,14 +44,11 @@ add_action( 'init', function () {
 	}
 } );
 
-// Permalink rewrite: Knowledge category should live at /knowledge/<slug>/.
-// We do this with rewrite rules so existing /knowledge/<slug>/ URLs keep working.
+// Permalink rewrite: individual articles in the Knowledge category live at
+// /knowledge/<slug>/. We don't claim /knowledge/ itself — that's a real
+// WP Page (with the navy hero + [keystone_knowledge_grid] shortcode) so
+// users can edit the page intro in the editor.
 add_action( 'init', function () {
-	add_rewrite_rule(
-		'^knowledge/?$',
-		'index.php?category_name=knowledge',
-		'top'
-	);
 	add_rewrite_rule(
 		'^knowledge/([^/]+)/?$',
 		'index.php?name=$matches[1]',
