@@ -93,12 +93,14 @@ p { margin: 0 0 1em; color: var(--slate); }
 }
 .btn-utility.client { background: var(--gold); color: var(--ink); }
 .btn-utility.client:hover { background: var(--gold-soft); transform: translateY(-1px); }
-.btn-utility.employee {
+.btn-utility.employee,
+.btn-utility.support {
   background: transparent;
   color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.btn-utility.employee:hover { border-color: var(--gold); color: var(--gold); }
+.btn-utility.employee:hover,
+.btn-utility.support:hover { border-color: var(--gold); color: var(--gold); }
 
 .nav-bar .container {
   display: flex;
