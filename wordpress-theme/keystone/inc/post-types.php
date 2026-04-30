@@ -2,8 +2,12 @@
 /**
  * Custom post types and taxonomies.
  *
- *  - service (8 service detail pages, with archive at /services/)
- *  - post   (built-in, used for ~50 knowledge articles, with category "Knowledge")
+ *  - service (8 service detail pages, individuals at /services/<slug>/)
+ *  - post    (built-in, used for ~50 knowledge articles, with category "Knowledge")
+ *
+ * /services/ itself is a regular WP Page (with the nice navy-hero +
+ * service-cards overview). The CPT does NOT register an archive at
+ * /services/ — that would override the Page.
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -23,7 +27,7 @@ add_action( 'init', function () {
 			'all_items'          => __( 'All Services',   'keystone' ),
 		],
 		'public'              => true,
-		'has_archive'         => 'services',
+		'has_archive'         => false,
 		'rewrite'             => [ 'slug' => 'services', 'with_front' => false ],
 		'show_in_rest'        => true,
 		'menu_position'       => 21,

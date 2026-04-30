@@ -146,7 +146,7 @@ items.push(makeItem({
 const TOP_PAGES = [
   { file: 'about.html',         slug: 'about',         title: 'About Us' },
   { file: 'contact.html',       slug: 'contact',       title: 'Contact' },
-  { file: 'services.html',      slug: 'services-overview', title: 'Services Overview' },
+  { file: 'services.html',      slug: 'services',      title: 'Services' },
   { file: 'careers.html',       slug: 'careers',       title: 'Careers' },
   { file: 'accessibility.html', slug: 'accessibility', title: 'Accessibility' },
   { file: 'privacy.html',       slug: 'privacy',       title: 'Privacy Policy' },
