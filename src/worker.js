@@ -23,8 +23,8 @@ const ALLOWED_ORIGINS = new Set([
   'https://keystone-website.keystonetech.workers.dev',
   'https://keystonetech.ca',
   'https://www.keystonetech.ca',
-  'https://dev.kct.ca',
-  'https://www.dev.kct.ca',
+  'https://dev.keystonetech.ca',
+  'https://www.dev.keystonetech.ca',
   'http://localhost:8787',
   'http://127.0.0.1:8787',
 ]);
