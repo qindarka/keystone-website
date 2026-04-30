@@ -13,13 +13,32 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 const KEYSTONE_DEMO_FLAG = 'keystone_demo_imported';
 
+// Pages we expect to exist after a successful import. Used by the admin
+// notice to decide whether to nag — if all of these are present, no notice.
+const KEYSTONE_EXPECTED_PAGES = [
+	'home', 'about', 'contact', 'services', 'careers',
+	'accessibility', 'privacy', 'terms', 'thanks', 'knowledge',
+];
+
+function keystone_demo_missing_pages() {
+	$missing = [];
+	foreach ( KEYSTONE_EXPECTED_PAGES as $slug ) {
+		if ( ! get_page_by_path( $slug, OBJECT, 'page' ) ) $missing[] = $slug;
+	}
+	return $missing;
+}
+
 add_action( 'admin_notices', function () {
 	if ( ! current_user_can( 'manage_options' ) ) return;
 
 	$flag = get_option( KEYSTONE_DEMO_FLAG );
 	if ( $flag === 'skipped' ) return;
 
+	$missing = keystone_demo_missing_pages();
 	$first_run = empty( $flag );
+
+	// If every expected page exists, the import is "done" — no notice.
+	if ( ! $first_run && empty( $missing ) ) return;
 
 	$import_url = wp_nonce_url(
 		add_query_arg( 'keystone-import-demo', '1', admin_url() ),
@@ -34,7 +53,7 @@ add_action( 'admin_notices', function () {
 				<a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'keystone-skip-demo', '1', admin_url() ), 'keystone_skip_demo' ) ); ?>" class="button">Skip — I'll start blank</a>
 			</p>
 		<?php else : ?>
-			<p style="font-size:14px;"><strong>Keystone theme:</strong> Demo content was previously imported. If a theme update added new pages (e.g. a Knowledge page or new Service), re-run the import to pull them in. Existing slugs are skipped, so this is always safe.</p>
+			<p style="font-size:14px;"><strong>Keystone theme:</strong> A theme update added <?php echo count( $missing ); ?> new page<?php echo count( $missing ) === 1 ? '' : 's'; ?> (<?php echo esc_html( implode( ', ', $missing ) ); ?>). Re-run the demo import to pull them in. Existing slugs are skipped, so this is always safe.</p>
 			<p>
 				<a href="<?php echo esc_url( $import_url ); ?>" class="button">Re-run demo import</a>
 			</p>
