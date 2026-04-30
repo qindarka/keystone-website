@@ -18,6 +18,7 @@ require_once KEYSTONE_DIR . '/inc/patterns.php';
 require_once KEYSTONE_DIR . '/inc/chatbot.php';
 require_once KEYSTONE_DIR . '/inc/shortcodes.php';
 require_once KEYSTONE_DIR . '/inc/demo-import.php';
+require_once KEYSTONE_DIR . '/inc/dates-fix.php';
 
 // ---- Theme supports & cleanup -------------------------------------------
 

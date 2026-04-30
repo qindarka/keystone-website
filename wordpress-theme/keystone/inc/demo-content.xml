@@ -9,7 +9,7 @@
   <title>Keystone Technologies</title>
   <link>https://keystonetech.ca</link>
   <description>Keystone Technologies marketing site export</description>
-  <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+  <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
   <language>en-CA</language>
   <wp:wxr_version>1.2</wp:wxr_version>
   <wp:base_site_url>https://keystonetech.ca</wp:base_site_url>
@@ -35,7 +35,7 @@
   <item>
     <title><![CDATA[Home]]></title>
     <link>https://keystonetech.ca/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1000</guid>
     <description></description>
@@ -54,8 +54,8 @@
 <!-- wp:pattern {"slug":"keystone/cta-banner"} /-->]]></content:encoded>
     <excerpt:encoded><![CDATA[Keystone Technologies delivers managed IT, cybersecurity, cloud, VoIP and compliance solutions to small and medium-sized businesses across Southwestern Ontario.]]></excerpt:encoded>
     <wp:post_id>1000</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[home]]></wp:post_name>
@@ -71,7 +71,7 @@
   <item>
     <title><![CDATA[About Us]]></title>
     <link>https://keystonetech.ca/about/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1001</guid>
     <description></description>
@@ -212,8 +212,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Learn about Keystone Technologies — a Southwestern Ontario MSP delivering reliable, expert IT services to small and medium-sized businesses.]]></excerpt:encoded>
     <wp:post_id>1001</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[about]]></wp:post_name>
@@ -229,7 +229,7 @@
   <item>
     <title><![CDATA[Contact]]></title>
     <link>https://keystonetech.ca/contact/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1002</guid>
     <description></description>
@@ -324,8 +324,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Contact Keystone Technologies for managed IT, cybersecurity, cloud or VoIP services in Southwestern Ontario. Call, email or send a message — we respond fast.]]></excerpt:encoded>
     <wp:post_id>1002</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[contact]]></wp:post_name>
@@ -341,7 +341,7 @@
   <item>
     <title><![CDATA[Services]]></title>
     <link>https://keystonetech.ca/services/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1003</guid>
     <description></description>
@@ -454,8 +454,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Comprehensive IT services for SMBs in Southwestern Ontario: managed IT, cybersecurity, cloud, network, telephony, compliance, IT consulting and assessments.]]></excerpt:encoded>
     <wp:post_id>1003</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[services]]></wp:post_name>
@@ -471,7 +471,7 @@
   <item>
     <title><![CDATA[Careers]]></title>
     <link>https://keystonetech.ca/careers/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1004</guid>
     <description></description>
@@ -612,8 +612,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Join Keystone Technologies. We're hiring IT technicians, engineers and consultants who care about doing the job right — based in London, Ontario.]]></excerpt:encoded>
     <wp:post_id>1004</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[careers]]></wp:post_name>
@@ -629,7 +629,7 @@
   <item>
     <title><![CDATA[Accessibility]]></title>
     <link>https://keystonetech.ca/accessibility/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1005</guid>
     <description></description>
@@ -703,8 +703,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Keystone Technologies' commitment to digital accessibility under the Accessibility for Ontarians with Disabilities Act (AODA) and WCAG 2.0 Level AA.]]></excerpt:encoded>
     <wp:post_id>1005</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[accessibility]]></wp:post_name>
@@ -720,7 +720,7 @@
   <item>
     <title><![CDATA[Privacy Policy]]></title>
     <link>https://keystonetech.ca/privacy/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1006</guid>
     <description></description>
@@ -790,8 +790,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Privacy policy for Keystone Technologies and keystonetech.ca.]]></excerpt:encoded>
     <wp:post_id>1006</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[privacy]]></wp:post_name>
@@ -807,7 +807,7 @@
   <item>
     <title><![CDATA[Terms of Use]]></title>
     <link>https://keystonetech.ca/terms/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1007</guid>
     <description></description>
@@ -871,8 +871,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Terms of use for the keystonetech.ca website.]]></excerpt:encoded>
     <wp:post_id>1007</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[terms]]></wp:post_name>
@@ -888,7 +888,7 @@
   <item>
     <title><![CDATA[Thanks]]></title>
     <link>https://keystonetech.ca/thanks/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1008</guid>
     <description></description>
@@ -910,8 +910,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[]]></excerpt:encoded>
     <wp:post_id>1008</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[thanks]]></wp:post_name>
@@ -927,7 +927,7 @@
   <item>
     <title><![CDATA[Knowledge]]></title>
     <link>https://keystonetech.ca/knowledge/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1009</guid>
     <description></description>
@@ -954,8 +954,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Articles, insights and how-tos from the Keystone Technologies team.]]></excerpt:encoded>
     <wp:post_id>1009</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[knowledge]]></wp:post_name>
@@ -971,7 +971,7 @@
   <item>
     <title><![CDATA[IT Assessments]]></title>
     <link>https://keystonetech.ca/services/assessments/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1010</guid>
     <description></description>
@@ -1026,8 +1026,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Independent IT, security and infrastructure assessments for SMBs — written reports with prioritized recommendations.]]></excerpt:encoded>
     <wp:post_id>1010</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[assessments]]></wp:post_name>
@@ -1043,7 +1043,7 @@
   <item>
     <title><![CDATA[Cloud Solutions]]></title>
     <link>https://keystonetech.ca/services/cloud/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1011</guid>
     <description></description>
@@ -1098,8 +1098,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Microsoft 365, Azure and hybrid cloud — migrated, optimized and managed for SMBs across Southwestern Ontario.]]></excerpt:encoded>
     <wp:post_id>1011</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[cloud]]></wp:post_name>
@@ -1115,7 +1115,7 @@
   <item>
     <title><![CDATA[Compliance & Audit]]></title>
     <link>https://keystonetech.ca/services/compliance/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1012</guid>
     <description></description>
@@ -1170,8 +1170,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[PIPEDA, PHIPA, SOC 2 and cyber-insurance compliance support for SMBs in Southwestern Ontario.]]></excerpt:encoded>
     <wp:post_id>1012</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[compliance]]></wp:post_name>
@@ -1187,7 +1187,7 @@
   <item>
     <title><![CDATA[IT Consulting & vCIO]]></title>
     <link>https://keystonetech.ca/services/consulting/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1013</guid>
     <description></description>
@@ -1242,8 +1242,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Virtual CIO and IT consulting services for SMBs — strategic technology leadership, roadmaps and budgeting from London, Ontario.]]></excerpt:encoded>
     <wp:post_id>1013</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[consulting]]></wp:post_name>
@@ -1259,7 +1259,7 @@
   <item>
     <title><![CDATA[Cybersecurity]]></title>
     <link>https://keystonetech.ca/services/cybersecurity/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1014</guid>
     <description></description>
@@ -1314,8 +1314,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Cybersecurity for SMBs: EDR, MFA, email security, phishing simulations, dark-web monitoring and verified backups. London, Ontario.]]></excerpt:encoded>
     <wp:post_id>1014</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[cybersecurity]]></wp:post_name>
@@ -1331,7 +1331,7 @@
   <item>
     <title><![CDATA[Managed IT Support]]></title>
     <link>https://keystonetech.ca/services/managed/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1015</guid>
     <description></description>
@@ -1386,8 +1386,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Keystone Technologies' Managed IT Support: 24/7 monitoring, helpdesk, patching and a dedicated account manager for SMBs in Southwestern Ontario.]]></excerpt:encoded>
     <wp:post_id>1015</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[managed]]></wp:post_name>
@@ -1403,7 +1403,7 @@
   <item>
     <title><![CDATA[Network & Infrastructure]]></title>
     <link>https://keystonetech.ca/services/network/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1016</guid>
     <description></description>
@@ -1458,8 +1458,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Network design, deployment and management — firewalls, switching, Wi-Fi, VPN and structured cabling for SMBs in Southwestern Ontario.]]></excerpt:encoded>
     <wp:post_id>1016</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[network]]></wp:post_name>
@@ -1475,7 +1475,7 @@
   <item>
     <title><![CDATA[Telephony & VoIP]]></title>
     <link>https://keystonetech.ca/services/voip/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1017</guid>
     <description></description>
@@ -1530,8 +1530,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Hosted business VoIP, mobile softphones, call analytics and Teams integration for SMBs in Southwestern Ontario.]]></excerpt:encoded>
     <wp:post_id>1017</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-30 00:45:02]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-30 00:45:02]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[voip]]></wp:post_name>
@@ -1547,7 +1547,7 @@
   <item>
     <title><![CDATA[30+ Free Online Tools To Help Grow Your Business]]></title>
     <link>https://keystonetech.ca/knowledge/30-free-online-tools-help-grow-business/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1018</guid>
     <description></description>
@@ -1677,8 +1677,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[The Internet gives you access to several free online tools that can help with all aspects of your operations. We have researched the best and most useful free o]]></excerpt:encoded>
     <wp:post_id>1018</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-12-04 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-12-04 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[30-free-online-tools-help-grow-business]]></wp:post_name>
@@ -1694,7 +1694,7 @@
   <item>
     <title><![CDATA[5 Benefits of Wireless Internet in the Workplace]]></title>
     <link>https://keystonetech.ca/knowledge/5-benefits-of-wireless-internet-in-the-workplace/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1019</guid>
     <description></description>
@@ -1762,8 +1762,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Whether your office or business uses a mix of wired and wireless connections or relies solely on wireless, there are many benefits wireless internet offers. It]]></excerpt:encoded>
     <wp:post_id>1019</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-05-11 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-05-11 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[5-benefits-of-wireless-internet-in-the-workplace]]></wp:post_name>
@@ -1779,7 +1779,7 @@
   <item>
     <title><![CDATA[5 Tech Solutions That Make Remote Work Easier]]></title>
     <link>https://keystonetech.ca/knowledge/5-tech-solutions-that-make-remote-work-easier/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1020</guid>
     <description></description>
@@ -1852,8 +1852,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[As companies expand and access to data gets easier, remote work or &#8220;teleworking&#8221; is becoming more common. Remote work allows businesses to have the]]></excerpt:encoded>
     <wp:post_id>1020</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-11-20 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-11-20 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[5-tech-solutions-that-make-remote-work-easier]]></wp:post_name>
@@ -1869,7 +1869,7 @@
   <item>
     <title><![CDATA[5 Ways to Minimize Internal Security Threats]]></title>
     <link>https://keystonetech.ca/knowledge/5-ways-minimize-internal-security-threats/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1021</guid>
     <description></description>
@@ -1943,8 +1943,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Numerous high profile internal data breaches have been well publicized in the media. The most famous being the NSA leak by Edward Snowden, but the high-profile]]></excerpt:encoded>
     <wp:post_id>1021</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-07-24 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-07-24 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[5-ways-minimize-internal-security-threats]]></wp:post_name>
@@ -1960,7 +1960,7 @@
   <item>
     <title><![CDATA[6 Critical Practices To Include In Your Security Policy]]></title>
     <link>https://keystonetech.ca/knowledge/6-critical-practices-to-include-in-your-security-policy/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1022</guid>
     <description></description>
@@ -2035,8 +2035,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[A security breach has detrimental consequences for your company. If sensitive information is obtained through a security breach this can cause legal issues, mak]]></excerpt:encoded>
     <wp:post_id>1022</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-09-06 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-09-06 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[6-critical-practices-to-include-in-your-security-policy]]></wp:post_name>
@@ -2052,7 +2052,7 @@
   <item>
     <title><![CDATA[6 Social Media Security Strategies You Need To Implement]]></title>
     <link>https://keystonetech.ca/knowledge/6-social-media-security-strategies-need-implement/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1023</guid>
     <description></description>
@@ -2126,8 +2126,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Almost every business uses social media for some form of their operations. Whether you are using Facebook to advertise your business or LinkedIn to recruit new]]></excerpt:encoded>
     <wp:post_id>1023</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-11-13 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-11-13 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[6-social-media-security-strategies-need-implement]]></wp:post_name>
@@ -2143,7 +2143,7 @@
   <item>
     <title><![CDATA[8 tech terms every business owner should know]]></title>
     <link>https://keystonetech.ca/knowledge/8-tech-terms-every-business-owner-should-know/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1024</guid>
     <description></description>
@@ -2256,8 +2256,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Do tech terms sound like a foreign language to you? You’re not alone. We compiled the top tech terms every business owner should know (and the terms we get the]]></excerpt:encoded>
     <wp:post_id>1024</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-11-06 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-11-06 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[8-tech-terms-every-business-owner-should-know]]></wp:post_name>
@@ -2273,7 +2273,7 @@
   <item>
     <title><![CDATA[9 Technology Problems That Are Affecting Your Productivity]]></title>
     <link>https://keystonetech.ca/knowledge/9-technology-problems-affecting-productivity/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1025</guid>
     <description></description>
@@ -2352,8 +2352,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Technology is a great tool that has helped society become more productive and communicate more efficiently. However, so many of us still spend a large part of o]]></excerpt:encoded>
     <wp:post_id>1025</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-11-06 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-11-06 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[9-technology-problems-affecting-productivity]]></wp:post_name>
@@ -2369,7 +2369,7 @@
   <item>
     <title><![CDATA[A.I. is Here to Protect Us from Ourselves]]></title>
     <link>https://keystonetech.ca/knowledge/a-i-is-here-to-protect-us-from-ourselves/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1026</guid>
     <description></description>
@@ -2431,8 +2431,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[How Endpoint Detection and Response May Save Your Business &#160; Everyone is talking EDR these days, and by everyone, we mean all of us Managed I.T. Services p]]></excerpt:encoded>
     <wp:post_id>1026</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-03-11 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-03-11 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[a-i-is-here-to-protect-us-from-ourselves]]></wp:post_name>
@@ -2448,7 +2448,7 @@
   <item>
     <title><![CDATA[Amazon Echo Is Showing Up In The Workplace]]></title>
     <link>https://keystonetech.ca/knowledge/amazon-echo-showing-workplace/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1027</guid>
     <description></description>
@@ -2522,8 +2522,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Amazon Echo by David Bowie is licensed under CC BY-NC-SA 2.0 Personal voice assistants have been a popular household item over the past few years. With capabili]]></excerpt:encoded>
     <wp:post_id>1027</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-12-25 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-12-25 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[amazon-echo-showing-workplace]]></wp:post_name>
@@ -2539,7 +2539,7 @@
   <item>
     <title><![CDATA[Antivirus in 2025 is Outdated: Embrace Proactive and Behavioral Cybersecurity]]></title>
     <link>https://keystonetech.ca/knowledge/antivirus-edr-mdr/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1028</guid>
     <description></description>
@@ -2642,8 +2642,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[In today’s rapidly evolving cyber threat landscape, relying solely on traditional antivirus software is no longer sufficient to protect your organization&#8217;]]></excerpt:encoded>
     <wp:post_id>1028</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2025-08-19 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2025-08-19 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[antivirus-edr-mdr]]></wp:post_name>
@@ -2659,7 +2659,7 @@
   <item>
     <title><![CDATA[Best Mobile Apps to Help Grow your Small Business]]></title>
     <link>https://keystonetech.ca/knowledge/best-mobile-apps-to-help-grow-your-small-business/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1029</guid>
     <description></description>
@@ -2737,8 +2737,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Trying to get your small business off the ground is difficult with limited resources. However, true entrepreneurs know how to make limited resources go a long w]]></excerpt:encoded>
     <wp:post_id>1029</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-05-29 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-05-29 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[best-mobile-apps-to-help-grow-your-small-business]]></wp:post_name>
@@ -2754,7 +2754,7 @@
   <item>
     <title><![CDATA[Cybersecurity Policies For A Multi-Generational Workplace]]></title>
     <link>https://keystonetech.ca/knowledge/cybersecurity-policies-multi-generational-workplace/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1030</guid>
     <description></description>
@@ -2829,8 +2829,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Developing cybersecurity policies for a multi-generational workforce requires the consideration of several factors. Each generation lacks cyber awareness in dif]]></excerpt:encoded>
     <wp:post_id>1030</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-01-08 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-01-08 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[cybersecurity-policies-multi-generational-workplace]]></wp:post_name>
@@ -2846,7 +2846,7 @@
   <item>
     <title><![CDATA[Driving Stronger Results with Information Technology]]></title>
     <link>https://keystonetech.ca/knowledge/driving-stronger-results-with-information-technology/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1031</guid>
     <description></description>
@@ -2909,8 +2909,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[It goes without saying (even though we’re about to say it), businesses thrive through innovation. One needn’t look farther than the likes of Apple or Google’s c]]></excerpt:encoded>
     <wp:post_id>1031</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-07-08 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-07-08 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[driving-stronger-results-with-information-technology]]></wp:post_name>
@@ -2926,7 +2926,7 @@
   <item>
     <title><![CDATA[Why The Equifax Data Breach Is One Of The Worst Leaks]]></title>
     <link>https://keystonetech.ca/knowledge/equifax-data-breach-one-worst-leaks/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1032</guid>
     <description></description>
@@ -3005,8 +3005,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[On September 7th, Equifax announced they were hacked. Cybercriminals accessed the personal information of 143 million Americans. Equifax later announced that 10]]></excerpt:encoded>
     <wp:post_id>1032</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-09-25 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-09-25 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[equifax-data-breach-one-worst-leaks]]></wp:post_name>
@@ -3022,7 +3022,7 @@
   <item>
     <title><![CDATA[Everything You Need To Know Before Switching To BYOD]]></title>
     <link>https://keystonetech.ca/knowledge/everything-need-know-switching-byod/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1033</guid>
     <description></description>
@@ -3101,8 +3101,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Bring your own device (BYOD) workplaces are increasing in popularity. It is becoming more important for employees to have constant access to data. The easiest s]]></excerpt:encoded>
     <wp:post_id>1033</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-09-11 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-09-11 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[everything-need-know-switching-byod]]></wp:post_name>
@@ -3118,7 +3118,7 @@
   <item>
     <title><![CDATA[Fingerprint Scanning becoming a more Mainstream Technology]]></title>
     <link>https://keystonetech.ca/knowledge/fingerprint-scanning/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1034</guid>
     <description></description>
@@ -3184,8 +3184,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Fingerprint scanner technology today is becoming more mainstream. It used to be that you would be watching a James Bond movie or some other super sleuth flick,]]></excerpt:encoded>
     <wp:post_id>1034</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-03-07 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-03-07 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[fingerprint-scanning]]></wp:post_name>
@@ -3201,7 +3201,7 @@
   <item>
     <title><![CDATA[So, how do hackers use your data?]]></title>
     <link>https://keystonetech.ca/knowledge/how-hackers-use-your-data/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1035</guid>
     <description></description>
@@ -3269,8 +3269,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[It seems like a new data breach or malware is making headlines every week. But, it’s not surprising when you take a look at the value of the data hackers [&#823]]></excerpt:encoded>
     <wp:post_id>1035</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-07-09 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-07-09 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[how-hackers-use-your-data]]></wp:post_name>
@@ -3286,7 +3286,7 @@
   <item>
     <title><![CDATA[How Managed IT Services Will Save You Money]]></title>
     <link>https://keystonetech.ca/knowledge/how-it-managed-services-will-save-you-money/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1036</guid>
     <description></description>
@@ -3364,8 +3364,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Successful business owners know that it is important to reduce operating costs without affecting their company&#8217;s performance. Managed IT services can help]]></excerpt:encoded>
     <wp:post_id>1036</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-10-30 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-10-30 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[how-it-managed-services-will-save-you-money]]></wp:post_name>
@@ -3381,7 +3381,7 @@
   <item>
     <title><![CDATA[How To Balance IT Security And Employee Productivity]]></title>
     <link>https://keystonetech.ca/knowledge/how-to-balance-it-security-and-employee-productivity/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1037</guid>
     <description></description>
@@ -3452,8 +3452,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[IT security is important for a company to be successful and profitable. However, it may feel that with a number of security processes in place that it inhibits]]></excerpt:encoded>
     <wp:post_id>1037</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-09-13 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-09-13 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[how-to-balance-it-security-and-employee-productivity]]></wp:post_name>
@@ -3469,7 +3469,7 @@
   <item>
     <title><![CDATA[How To Market Your Business With Augmented Reality]]></title>
     <link>https://keystonetech.ca/knowledge/how-to-market-your-business-with-augmented-reality/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1038</guid>
     <description></description>
@@ -3557,8 +3557,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[It may seem like forever ago that businesses were capitalizing on Pokémon Go to market their business. Even though Pokémon Go has fallen off the radar, augmente]]></excerpt:encoded>
     <wp:post_id>1038</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-09-20 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-09-20 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[how-to-market-your-business-with-augmented-reality]]></wp:post_name>
@@ -3574,7 +3574,7 @@
   <item>
     <title><![CDATA[Hybrid Cloud: Is It Right For Your Business?]]></title>
     <link>https://keystonetech.ca/knowledge/hybrid-cloud-right-business/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1039</guid>
     <description></description>
@@ -3641,8 +3641,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[A hybrid cloud solution can offer several benefits for your business. We are seeing an increase in small to medium sized businesses adopting this technology to]]></excerpt:encoded>
     <wp:post_id>1039</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-11-27 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-11-27 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[hybrid-cloud-right-business]]></wp:post_name>
@@ -3658,7 +3658,7 @@
   <item>
     <title><![CDATA[Why It’s Important For SMBs To Manage Their Software Asssets]]></title>
     <link>https://keystonetech.ca/knowledge/important-smbs-manage-software-asssets/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1040</guid>
     <description></description>
@@ -3729,8 +3729,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Strategic management of software assets is just as important for SMBs as it is for large corporations. The implementation of IT solutions is more affordable thr]]></excerpt:encoded>
     <wp:post_id>1040</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-01-01 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-01-01 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[important-smbs-manage-software-asssets]]></wp:post_name>
@@ -3746,7 +3746,7 @@
   <item>
     <title><![CDATA[Inspiring Teens to Get Into Tech]]></title>
     <link>https://keystonetech.ca/knowledge/inspiring-teens-to-get-into-tech/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1041</guid>
     <description></description>
@@ -3807,8 +3807,8 @@
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Technology has come quite a long way since we first started doing business over twenty years ago. Back then, being a teen and being into computers meant you wer]]></excerpt:encoded>
     <wp:post_id>1041</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2019-12-08 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-12-08 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[inspiring-teens-to-get-into-tech]]></wp:post_name>
@@ -3824,7 +3824,7 @@
   <item>
     <title><![CDATA[Intel’s Spectre &#038; Meltdown Story Continues]]></title>
     <link>https://keystonetech.ca/knowledge/intels-spectre-meltdown-story-continues/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1042</guid>
     <description></description>
@@ -3899,8 +3899,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Spectre and Meltdown are being called &#8220;inherent design flaws&#8221; by some, although this is not politically correct. These exploits take advantage of cr]]></excerpt:encoded>
     <wp:post_id>1042</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-01-29 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-01-29 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[intels-spectre-meltdown-story-continues]]></wp:post_name>
@@ -3916,7 +3916,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[The Internet Of Things: Security Challenges]]></title>
     <link>https://keystonetech.ca/knowledge/internet-things-security-challenges/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1043</guid>
     <description></description>
@@ -3989,8 +3989,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[The amount of internet connected devices has increased significantly with the release of smartphones, tablets, smartwatches and smart TVs. Business Insider pred]]></excerpt:encoded>
     <wp:post_id>1043</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-12-11 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-12-11 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[internet-things-security-challenges]]></wp:post_name>
@@ -4006,7 +4006,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[It’s Time to Upgrade to Microsoft 365 and Teams]]></title>
     <link>https://keystonetech.ca/knowledge/its-time-to-upgrade-to-microsoft-365-and-teams/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1044</guid>
     <description></description>
@@ -4075,8 +4075,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Maybe your business hasn’t put a lot of thought into collaboration tools. After all, the tried-and-true method of attaching a file in an email and hitting the ‘]]></excerpt:encoded>
     <wp:post_id>1044</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-11-30 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-11-30 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[its-time-to-upgrade-to-microsoft-365-and-teams]]></wp:post_name>
@@ -4092,7 +4092,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[How To Keep CRM Data Secure]]></title>
     <link>https://keystonetech.ca/knowledge/keep-crm-data-secure/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1045</guid>
     <description></description>
@@ -4167,8 +4167,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[The value of CRM data makes it vulnerable to security threats since it contains personal information about your clients. CRM security shouldn’t have to be diffi]]></excerpt:encoded>
     <wp:post_id>1045</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-09-18 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-09-18 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[keep-crm-data-secure]]></wp:post_name>
@@ -4184,7 +4184,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Laptops Built to do Business]]></title>
     <link>https://keystonetech.ca/knowledge/laptops-built-to-do-business/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1046</guid>
     <description></description>
@@ -4253,8 +4253,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[What to Look for When Making Your Next Upgrade &#160; What will the office of tomorrow look like? We start here because it’s a question we think a lot of [&#823]]></excerpt:encoded>
     <wp:post_id>1046</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-04-16 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-04-16 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[laptops-built-to-do-business]]></wp:post_name>
@@ -4270,7 +4270,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Lazy I.T., not Crypto, the Reason for Increased Ransomware Attacks]]></title>
     <link>https://keystonetech.ca/knowledge/lazy-i-t-not-crypto-the-reason-for-increased-ransomware-attacks/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1047</guid>
     <description></description>
@@ -4335,8 +4335,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Ransomware attacks can be devastating. Just ask Colonial Pipeline, an organization responsible for transporting nearly half of the United States’ east coast fue]]></excerpt:encoded>
     <wp:post_id>1047</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-11-22 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-11-22 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[lazy-i-t-not-crypto-the-reason-for-increased-ransomware-attacks]]></wp:post_name>
@@ -4352,7 +4352,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Is malware and a virus the same thing?]]></title>
     <link>https://keystonetech.ca/knowledge/malware-virus/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1048</guid>
     <description></description>
@@ -4427,8 +4427,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[A lot of people use malware and virus as interchangeable terms. While both are bad for your computer, they actually have distinct meanings. We break down the di]]></excerpt:encoded>
     <wp:post_id>1048</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-11-25 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-11-25 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[malware-virus]]></wp:post_name>
@@ -4444,7 +4444,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Is Your Organization Protected Against Cyber-threats?]]></title>
     <link>https://keystonetech.ca/knowledge/organization-protected-cyber-threats/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1049</guid>
     <description></description>
@@ -4515,8 +4515,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Threat intelligence is, or should be, at the top of any business owner’s priority list. Your intellectual property, client information, financial records, team]]></excerpt:encoded>
     <wp:post_id>1049</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-07-27 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-07-27 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[organization-protected-cyber-threats]]></wp:post_name>
@@ -4532,7 +4532,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Preparing Your Business for What’s Coming Next]]></title>
     <link>https://keystonetech.ca/knowledge/preparing-your-business-for-whats-coming-next/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1050</guid>
     <description></description>
@@ -4596,8 +4596,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[For well over a year, business have had to adapt quickly to an everchanging environment. For some, that meant changing from traditional brick and mortar to an o]]></excerpt:encoded>
     <wp:post_id>1050</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-06-01 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-06-01 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[preparing-your-business-for-whats-coming-next]]></wp:post_name>
@@ -4613,7 +4613,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Protecting Your Business In Coworking Spaces]]></title>
     <link>https://keystonetech.ca/knowledge/protecting-business-co-working-spaces/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1051</guid>
     <description></description>
@@ -4694,8 +4694,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Coworking spaces are a popular type of office space, especially for small businesses and entrepreneurs. Coworking spaces can be an affordable alternative to tra]]></excerpt:encoded>
     <wp:post_id>1051</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-10-02 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-10-02 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[protecting-business-co-working-spaces]]></wp:post_name>
@@ -4711,7 +4711,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Protecting Your Business with a Firewall]]></title>
     <link>https://keystonetech.ca/knowledge/protecting-your-business-with-a-firewall/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1052</guid>
     <description></description>
@@ -4775,8 +4775,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Firewalls; most are familiar with the ubiquitous term – that firewalls help protect their end devices from viruses and the like. Unfortunately, for many, that’s]]></excerpt:encoded>
     <wp:post_id>1052</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-12-09 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-12-09 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[protecting-your-business-with-a-firewall]]></wp:post_name>
@@ -4792,7 +4792,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Scaling Happiness]]></title>
     <link>https://keystonetech.ca/knowledge/scaling-happiness/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1053</guid>
     <description></description>
@@ -4853,8 +4853,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Keystone has always been a small business focused on helping other small and medium-sized businesses conquer their I.T. needs. We grew that way, from one, to tw]]></excerpt:encoded>
     <wp:post_id>1053</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-02-11 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-02-11 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[scaling-happiness]]></wp:post_name>
@@ -4870,7 +4870,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Securing Small Business with Virtual Private Networks]]></title>
     <link>https://keystonetech.ca/knowledge/securing-small-business-with-virtual-private-networks/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1054</guid>
     <description></description>
@@ -4932,8 +4932,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Does your company need a Virtual Private Network? Not sure, because you don’t know what a VPN even is, or how it’ll even help? You’re not alone. Fortunately, we]]></excerpt:encoded>
     <wp:post_id>1054</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2021-02-11 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2021-02-11 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[securing-small-business-with-virtual-private-networks]]></wp:post_name>
@@ -4949,7 +4949,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Security Tips For Computer Disposal]]></title>
     <link>https://keystonetech.ca/knowledge/security-tips-computer-disposal/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1055</guid>
     <description></description>
@@ -5019,8 +5019,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[When your company gets new computers, the number one priority is to set them up with proper security measures. While many people understand the importance of do]]></excerpt:encoded>
     <wp:post_id>1055</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-10-09 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-10-09 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[security-tips-computer-disposal]]></wp:post_name>
@@ -5036,7 +5036,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Should I outsource my IT services? The pros and cons.]]></title>
     <link>https://keystonetech.ca/knowledge/should-i-outsource-my-it-services-the-pros-and-cons/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1056</guid>
     <description></description>
@@ -5105,8 +5105,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Deciding whether to outsource your IT services? You’re not alone – many businesses are facing the same challenge. Managing technology takes away too much valuab]]></excerpt:encoded>
     <wp:post_id>1056</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-09-16 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-09-16 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[should-i-outsource-my-it-services-the-pros-and-cons]]></wp:post_name>
@@ -5122,7 +5122,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Should you block social media websites?]]></title>
     <link>https://keystonetech.ca/knowledge/should-you-block-social-media-websites/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1057</guid>
     <description></description>
@@ -5188,8 +5188,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[As a business owner, it’s understandable to have concerns about employees using social media at work. Although it’s rare, some people may abuse these website ca]]></excerpt:encoded>
     <wp:post_id>1057</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-08-13 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-08-13 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[should-you-block-social-media-websites]]></wp:post_name>
@@ -5205,7 +5205,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Why Your Small Business Is Likely To Be Targeted By A Cyberattack]]></title>
     <link>https://keystonetech.ca/knowledge/small-business-likely-targeted-cyber-attack/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1058</guid>
     <description></description>
@@ -5275,8 +5275,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[We don&#8217;t often hear about small businesses falling victim to cyberattacks so it is natural to think these attacks are rare. We are susceptible to thinking]]></excerpt:encoded>
     <wp:post_id>1058</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-12-18 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-12-18 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[small-business-likely-targeted-cyber-attack]]></wp:post_name>
@@ -5292,7 +5292,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Summer Holidays: Beware of Cybersecurity Threats]]></title>
     <link>https://keystonetech.ca/knowledge/summer-holidays-cybersecurity/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1059</guid>
     <description></description>
@@ -5359,8 +5359,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[It’s officially summer and naturally employees will take more holidays and time off work compared to other seasons. What does this mean for business owners? As]]></excerpt:encoded>
     <wp:post_id>1059</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-06-26 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-06-26 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[summer-holidays-cybersecurity]]></wp:post_name>
@@ -5376,7 +5376,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Suspected Malicious Email: A Warning Sign Checklist]]></title>
     <link>https://keystonetech.ca/knowledge/suspected-malicious-email-warning-sign-checklist/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1060</guid>
     <description></description>
@@ -5450,8 +5450,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Implementing an email spam filter is an effective security precaution. However, this doesn’t mean you will completely eliminate spam from your inbox. Malicious]]></excerpt:encoded>
     <wp:post_id>1060</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-10-16 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-10-16 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[suspected-malicious-email-warning-sign-checklist]]></wp:post_name>
@@ -5467,7 +5467,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[How Technology Can Improve Your Customer Service]]></title>
     <link>https://keystonetech.ca/knowledge/technology-can-improve-customer-service/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1061</guid>
     <description></description>
@@ -5539,8 +5539,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[There’s no denying that customer service is an integral part of any business. Yet, companies from small mom-and-pop shops to Fortune 500’s bemoan the need for a]]></excerpt:encoded>
     <wp:post_id>1061</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-07-27 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-07-27 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[technology-can-improve-customer-service]]></wp:post_name>
@@ -5556,7 +5556,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[The Biggest Problem With Your Phones Fingerprint Scanner]]></title>
     <link>https://keystonetech.ca/knowledge/the-biggest-problem-with-your-phones-fingerprint-scanner/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1062</guid>
     <description></description>
@@ -5628,8 +5628,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[If you buy a cell phone today, it likely has an option to unlock the device with fingerprint recognition technology. This feature appeals to a lot of people sin]]></excerpt:encoded>
     <wp:post_id>1062</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2017-10-23 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2017-10-23 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[the-biggest-problem-with-your-phones-fingerprint-scanner]]></wp:post_name>
@@ -5645,7 +5645,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[The King is Dead, Long Live the King]]></title>
     <link>https://keystonetech.ca/knowledge/the-king-is-dead-long-live-the-king/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1063</guid>
     <description></description>
@@ -5708,8 +5708,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[On January 14, 2020, Microsoft will end its free extended support covering Windows 7, effectively exposing millions of home and enterprise users to potential un]]></excerpt:encoded>
     <wp:post_id>1063</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2019-12-14 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-12-14 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[the-king-is-dead-long-live-the-king]]></wp:post_name>
@@ -5725,7 +5725,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[What is Cloud Security?]]></title>
     <link>https://keystonetech.ca/knowledge/what-is-cloud-security/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1064</guid>
     <description></description>
@@ -5794,8 +5794,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[The cloud is a vast number of servers around the world that contribute to a single network. It is mainly used for storage, but can also be used for running [&#8]]></excerpt:encoded>
     <wp:post_id>1064</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2019-11-26 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2019-11-26 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[what-is-cloud-security]]></wp:post_name>
@@ -5811,7 +5811,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Why Ontario SMBs are Prime Targets for Ransomware in 2026]]></title>
     <link>https://keystonetech.ca/knowledge/why-ontario-smbs-targets-for-ransomware/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1065</guid>
     <description></description>
@@ -5928,8 +5928,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Ontario small and medium-sized businesses are facing a ransomware epidemic in 2026, and the numbers are sobering. According to recent provincial reports, attack]]></excerpt:encoded>
     <wp:post_id>1065</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2026-04-10 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2026-04-10 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[why-ontario-smbs-targets-for-ransomware]]></wp:post_name>
@@ -5945,7 +5945,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Why Should Businesses Use Cloud Computing?]]></title>
     <link>https://keystonetech.ca/knowledge/why-should-businesses-use-cloud-computing/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1066</guid>
     <description></description>
@@ -6012,8 +6012,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[The market research firm Forrester predicts that the global public cloud market will expand at a 22% annual growth rate, but why are businesses choosing to util]]></excerpt:encoded>
     <wp:post_id>1066</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2018-04-27 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2018-04-27 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[why-should-businesses-use-cloud-computing]]></wp:post_name>
@@ -6029,7 +6029,7 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
   <item>
     <title><![CDATA[Windows 10 End of Life &#8211; What You Need to Know]]></title>
     <link>https://keystonetech.ca/knowledge/windows-10-end-of-life-what-you-need-to-know/</link>
-    <pubDate>Thu, 30 Apr 2026 00:23:23 GMT</pubDate>
+    <pubDate>Thu, 30 Apr 2026 00:45:02 GMT</pubDate>
     <dc:creator><![CDATA[admin]]></dc:creator>
     <guid isPermaLink="false">https://keystonetech.ca/?p=1067</guid>
     <description></description>
@@ -6214,8 +6214,8 @@ Many also believe Intel has downplayed this problem from the beginning, and shou
 <!-- /wp:html -->]]></content:encoded>
     <excerpt:encoded><![CDATA[Earlier this year, Microsoft has announced that Windows 10 will reach its end of support on&#160;October 14, 2025. After this date, Windows 10 will no longer re]]></excerpt:encoded>
     <wp:post_id>1067</wp:post_id>
-    <wp:post_date><![CDATA[2026-04-30 00:23:23]]></wp:post_date>
-    <wp:post_date_gmt><![CDATA[2026-04-30 00:23:23]]></wp:post_date_gmt>
+    <wp:post_date><![CDATA[2025-07-09 00:00:00]]></wp:post_date>
+    <wp:post_date_gmt><![CDATA[2025-07-09 00:00:00]]></wp:post_date_gmt>
     <wp:comment_status><![CDATA[closed]]></wp:comment_status>
     <wp:ping_status><![CDATA[closed]]></wp:ping_status>
     <wp:post_name><![CDATA[windows-10-end-of-life-what-you-need-to-know]]></wp:post_name>

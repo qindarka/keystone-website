@@ -239,13 +239,42 @@ for (const f of serviceFiles) {
 
 // ---- 4) Knowledge articles (posts, "knowledge" category) --------------
 
+// Extract the article-slug → original-publication-date map from
+// knowledge.html. Each card looks like:
+//   <a class="kn-card ..." href="/knowledge/<slug>">
+//     ...
+//     <span class="kn-card-date">December 9, 2021</span>
+const knowledgeIndex = read('knowledge.html');
+const articleDates = {};
+{
+  const cardRe = /<a[^>]+class="kn-card[^"]*"[^>]+href="\/knowledge\/([^"#?]+)"[\s\S]*?<span class="kn-card-date">([^<]+)<\/span>/g;
+  let m;
+  while ((m = cardRe.exec(knowledgeIndex)) !== null) {
+    const slug = m[1].replace(/\/$/, '');
+    const dateText = m[2].trim();
+    const parsed = new Date(dateText);
+    if (!Number.isNaN(parsed.getTime())) {
+      // Format: YYYY-MM-DD HH:MM:SS for WP/MySQL.
+      articleDates[slug] = parsed.toISOString().replace('T', ' ').replace(/\..+$/, '');
+    }
+  }
+}
+console.log(`  parsed dates for ${Object.keys(articleDates).length} articles`);
+
+// Persist the map as JSON so a runtime admin action can fix up dates
+// for posts that were already imported with NOW.
+fs.writeFileSync(
+  path.resolve(__dirname, '../keystone/inc/article-dates.json'),
+  JSON.stringify(articleDates, null, 2)
+);
+
 const articleFiles = fs.readdirSync(path.join(REPO, 'knowledge')).filter(f => f.endsWith('.html'));
 for (const f of articleFiles) {
   const slug = f.replace(/\.html$/, '');
   const html = read(`knowledge/${f}`);
   const main = extractMain(html);
   const title = extractTitle(html) || slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-  items.push(makeItem({
+  let item = makeItem({
     id: nextId++,
     title,
     slug,
@@ -253,7 +282,17 @@ for (const f of articleFiles) {
     postType: 'post',
     excerpt: extractDescription(html),
     categories: [ { slug: 'knowledge', name: 'Knowledge' } ],
-  }));
+  });
+  // Override the import-time post_date with the original publication
+  // date when we have one parsed from knowledge.html.
+  if (articleDates[slug]) {
+    const d = articleDates[slug];
+    item = item.replace(
+      /<wp:post_date>[\s\S]*?<\/wp:post_date>\s*<wp:post_date_gmt>[\s\S]*?<\/wp:post_date_gmt>/,
+      `<wp:post_date>${cdata(d)}</wp:post_date>\n    <wp:post_date_gmt>${cdata(d)}</wp:post_date_gmt>`
+    );
+  }
+  items.push(item);
 }
 
 // ---- assemble WXR -----------------------------------------------------
